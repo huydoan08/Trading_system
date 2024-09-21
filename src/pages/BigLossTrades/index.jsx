@@ -1,12 +1,12 @@
 import { Grid, Paper, Typography } from "@mui/material";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-import Image1M from "/image/1M_00001.png";
-import Image1W from "/image/1W_00001.png";
-import Image1D from "/image/1D_00001.png";
-import ImageH4 from "/image/H4_00001.png";
-import ImageH2 from "/image/H2_00001.png";
-import ImageH1 from "/image/H1_00001.png";
+import Image1M from "/image/1M_00002.png";
+import Image1W from "/image/1W_00002.png";
+import Image1D from "/image/1D_00002.png";
+import ImageH4 from "/image/H4_00002.png";
+import ImageH2 from "/image/H2_00002.png";
+import ImageH1 from "/image/H1_00002.png";
 
 const images = [
   {
@@ -49,21 +49,21 @@ const timeFrames = [
   {
     title: "Khung 1D",
     content:
-      "Tăng, nhưng thực sự mới đi được một  xíu (1/3 chặng đường, có khả năng đi tiếp rất cao vì bắt đầu mở rộng). " ,
+      "Tăng, nhưng RSI đã đi được 1 quãng xa (2/3 chặng đường), và lực tăng này không thực sự mạnh mẽ vì mới ở vùng RSI 60, có khả năng đã hết hiệu lực sóng tăng. " ,
   },
   {
     title: "Khung H4",
     content:
-      "Tăng, nhưng có khả năng là dã đi hết sóng, có thể có nhịp điều chỉnh nhẹ",
+      "Tăng, nhưng có dấu hiệu suy yếu, RSI suy yếu, đã rút râu nến tăng lần thứ 2, khả năng cao sẽ rơi.",
   },
   {
-    title: "Khung H1",
+    title: "Khung H2, H1",
     content:
-      "H2, H1 không có RSI vượt ra vùng 80, nhưng vẫn giữ giá khá tốt và chưa có hình thành cấu trúc giảm",
+      "H2, H1 không có RSI vượt ra vùng 80, đã hình thành cấu trúc sóng suy yếu, RSI đã quay lại retest xong và không phá qua.",
   },
 ];
 
-export default function MyGallery() {
+export default function BigLossTrades() {
   return (
     <>
       <Grid container spacing={2} style={{ padding: 16 }}>

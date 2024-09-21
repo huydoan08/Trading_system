@@ -68,15 +68,51 @@ const Sidebar = () => {
           <ListItem button component={Link} to="/early-profit" sx={{ pl: 4 }}>
             <ListItemText primary="Lệnh chốt lời non" />
           </ListItem>
-          <ListItem button component={Link} to="/big-loss" sx={{ pl: 4 }}>
+          <ListItem
+            button
+            component={Link}
+            to="/big-loss-trades"
+            sx={{ pl: 4 }}
+          >
             <ListItemText primary="Lệnh thua lỗ lớn" />
           </ListItem>
-          <ListItem button component={Link} to="/missed-opportunity" sx={{ pl: 4 }}>
+          <ListItem
+            button
+            component={Link}
+            to="/missed-opportunity"
+            sx={{ pl: 4 }}
+          >
             <ListItemText primary="Bỏ lỡ cơ hội tốt" />
           </ListItem>
         </List>
       </Collapse>
-
+      <Divider />
+      <List>
+        <ListItem button component={Link} to="/important-trades">
+          <ListItemIcon>
+            <SettingsSystemDaydreamIcon />
+          </ListItemIcon>
+          <ListItemText primary="IMPORTANT NOTES" />
+        </ListItem>
+      </List>
+      <Divider />
+      <List>
+        <ListItem button component={Link} to="/criteria">
+          <ListItemIcon>
+            <SettingsSystemDaydreamIcon />
+          </ListItemIcon>
+          <ListItemText primary="CRITERIA BEFORE ENTRY ORDERS" />
+        </ListItem>
+      </List>
+      <Divider />
+      <List>
+        <ListItem button component={Link} to="/technical-analysis">
+          <ListItemIcon>
+            <SettingsSystemDaydreamIcon />
+          </ListItemIcon>
+          <ListItemText primary="TECHNICAL ANALYSIS" />
+        </ListItem>
+      </List>
       <Divider />
     </Drawer>
   );
