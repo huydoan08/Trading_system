@@ -1,10 +1,8 @@
 import {
   Box,
   Typography,
-  Divider,
   Checkbox,
   FormControlLabel,
-  Container,
 } from "@mui/material";
 
 const criteria = [
@@ -21,55 +19,30 @@ const criteria = [
   },
   {
     label:
-      "Không cố tính ĐOÁN ĐỈNH, ĐOÁN ĐÁY → Chỉ FOLLOW theo xu hướng? Quản lý lệnh theo hiệu lực con sóng ở khung thời gian nhỏ hơn (khung H1)",
-  },
-  {
-    label:
-      "Luôn luôn ghi nhớ trò chơi trading là trò chơi của xác suất. Mọi dự phóng đều chỉ mang tính xác suất và không có gì đảm bảo chắc chắn được điều gì... ",
-  },
+      "Không cố tính ĐOÁN ĐỈNH, ĐOÁN ĐÁY → Chỉ FOLLOW theo xu hướng? Quản lý lệnh theo hiệu lực con sóng ở khung thời gian nhỏ hơn (khung M30, H1, H2, H4)",
+  }
 ];
 
-export default function Criteria() {
+export default function AfterEnterOrders() {
   return (
     <Box>
       <Box sx={{ padding: 4, marginTop: "-400px" }}>
-        <Typography
-          variant="h3"
-          component="h1"
-          gutterBottom
-          sx={{ fontWeight: "bold" }}
-        >
-          TRADING SYSTEMS
-        </Typography>
-
-        <Typography variant="h5" color="secondary" gutterBottom>
-          TRADE WHAT YOU SEE 😊, NOT WHAT YOU THINK 🤔
-        </Typography>
-        <Typography
-          variant="subtitle1"
-          sx={{ fontStyle: "italic" }}
-          color="success.main"
-        >
-          ( KIÊN NHẪN, QUYẾT ĐOÁN, KỈ LUẬT )
-        </Typography>
-
-        <Divider sx={{ my: 2 }} />
-
         <Typography variant="h6" gutterBottom fontSize={"40px"} fontWeight={700}>
           I. CÁC TIÊU CHÍ TRƯỚC KHI VÀO LỆNH
         </Typography>
         {criteria.map((item, index) => (
           <FormControlLabel
             key={index}
-            control={<Checkbox />}
+            control={<Checkbox sx={{ pt: -1}} />}
             label={
               <Typography
                 variant="body1"
-                fontSize={"26px"}
+                fontSize="26px"
+                fontWeight="bold"
                 dangerouslySetInnerHTML={{ __html: item.label }}
               />
             }
-            sx={{ color: index % 2 === 0 ? "red" : "black", marginBottom: 1, alignItems: "flex-start" }}
+            sx={{ color:"#000", marginBottom: 1, alignItems: "flex-start" }}
           />
         ))}
       </Box>

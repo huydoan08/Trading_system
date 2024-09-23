@@ -18,7 +18,7 @@ const CustomLayout = ({ children }) => {
         <Sidebar open={sidebarOpen} onClose={toggleSidebar} />
       </Drawer>
       <Box id="main">
-        <Box component="main" sx={{ flexGrow: 1, p: 3, marginLeft: '240px' }}>
+        <Box component="main" sx={{ flexGrow: 1, p: 3, marginLeft: '280px' }}>
           {children}
         </Box>
       </Box>

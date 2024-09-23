@@ -1,6 +1,5 @@
 import {
   Box,
-  Container,
   List,
   ListItem,
   ListItemText,
@@ -33,51 +32,52 @@ export default function ImporttantNotes() {
     {
       info: "Đứng ngoài chờ đợi khi cơ hội chưa thực sự rõ ràng cũng đã là thành công.",
     },
+    {
+      info: "Kĩ năng cần thời gian mới có thể thật sự thành thạo, cơ hội có rất nhiều và khi kĩ năng đã tốt thì cơ hội đến là tiền sẽ về.",
+    },
   ];
   return (
-    <>
-      <Container>
-        <Box sx={{ padding: 4 }}>
-          <Typography
-            variant="h6"
-            align="center"
-            fontWeight="bold"
-            gutterBottom
-            fontSize={"50px"}
-          >
-            LƯU Ý QUAN TRỌNG
-          </Typography>
-          <List>
-            {data.map((it, idx) => {
-              return (
-                <ListItem
-                  key={idx}
-                  sx={{ display: "flex", alignItems: "flex-start" }}
-                >
-                  <Box
-                    sx={{
-                      width: "10px",
-                      height: "10px",
-                      backgroundColor: "black",
-                      borderRadius: "50%",
-                      marginRight: "30px",
-                      flexShrink: 0,
-                      mt: "20px"
-                    }}
-                  />
-                  <ListItemText
-                    primaryTypographyProps={{
-                      fontSize: "30px",
-                      fontWeight: "700",
-                    }}
-                    primary={it?.info}
-                  />
-                </ListItem>
-              );
-            })}
-          </List>
-        </Box>
-      </Container>
-    </>
+    <Box>
+      <Box sx={{ padding: 4 }}>
+        <Typography
+          variant="h6"
+          align="center"
+          fontWeight="bold"
+          gutterBottom
+          fontSize={"50px"}
+        >
+          LƯU Ý QUAN TRỌNG
+        </Typography>
+        <List>
+          {data.map((it, idx) => {
+            return (
+              <ListItem
+                key={idx}
+                sx={{ display: "flex", alignItems: "flex-start" }}
+              >
+                <Box
+                  sx={{
+                    width: "10px",
+                    height: "10px",
+                    backgroundColor: "black",
+                    borderRadius: "50%",
+                    marginRight: "30px",
+                    flexShrink: 0,
+                    mt: "20px",
+                  }}
+                />
+                <ListItemText
+                  primaryTypographyProps={{
+                    fontSize: "30px",
+                    fontWeight: "700",
+                  }}
+                  primary={it?.info}
+                />
+              </ListItem>
+            );
+          })}
+        </List>
+      </Box>
+    </Box>
   );
 }

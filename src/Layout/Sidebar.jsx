@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Drawer,
   List,
@@ -12,11 +13,13 @@ import SettingsSystemDaydreamIcon from "@mui/icons-material/SettingsSystemDaydre
 import HistoryEduIcon from "@mui/icons-material/HistoryEdu";
 import { Link } from "react-router-dom";
 import { ExpandLess, ExpandMore } from "@mui/icons-material";
-import { useState } from "react";
+import SsidChartIcon from '@mui/icons-material/SsidChart';
+import CandlestickChartIcon from '@mui/icons-material/CandlestickChart';
+import CheckIcon from '@mui/icons-material/Check';
+import WarningIcon from '@mui/icons-material/Warning';
 
 const Sidebar = () => {
   const [open, setOpen] = useState({});
-
   const toggleMenu = (menu) => {
     setOpen((prevState) => ({ ...prevState, [menu]: !prevState[menu] }));
   };
@@ -25,9 +28,9 @@ const Sidebar = () => {
     <Drawer
       variant="permanent"
       sx={{
-        width: 240,
+        width: 300,
         flexShrink: 0,
-        "& .MuiDrawer-paper": { width: 240, boxSizing: "border-box" },
+        "& .MuiDrawer-paper": { width: 300, boxSizing: "border-box" },
       }}
     >
       <div>
@@ -37,7 +40,7 @@ const Sidebar = () => {
             padding: 16,
             fontWeight: "bold",
             textAlign: "center",
-            color: "#007bff",
+            color: "#000",
           }}
         >
           TRADING SYSTEMS
@@ -49,7 +52,7 @@ const Sidebar = () => {
           <ListItemIcon>
             <SettingsSystemDaydreamIcon />
           </ListItemIcon>
-          <ListItemText primary="TRADING SYSTEMS" />
+          <ListItemText primary="TRANG CHỦ" sx={{color: "#000"}}/>
         </ListItem>
       </List>
       <Divider />
@@ -57,22 +60,22 @@ const Sidebar = () => {
         <ListItemIcon>
           <HistoryEduIcon />
         </ListItemIcon>
-        <ListItemText primary="Operational Certificates" />
+        <ListItemText primary="NHẬT KÍ GIAO DỊCH" sx={{color: "#000"}}/>
         {open["certificates"] ? <ExpandLess /> : <ExpandMore />}
       </ListItem>
       <Collapse in={open["certificates"]} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-          <ListItem button component={Link} to="/big-win-trades" sx={{ pl: 4 }}>
+          <ListItem button component={Link} to="/big-win-trades" sx={{ pl: 4, color: "#000" }}>
             <ListItemText primary="Lệnh thắng lớn" />
           </ListItem>
-          <ListItem button component={Link} to="/early-profit" sx={{ pl: 4 }}>
+          <ListItem button component={Link} to="/early-profit" sx={{ pl: 4, color: "#000" }}>
             <ListItemText primary="Lệnh chốt lời non" />
           </ListItem>
           <ListItem
             button
             component={Link}
             to="/big-loss-trades"
-            sx={{ pl: 4 }}
+            sx={{ pl: 4, color: "#000" }}
           >
             <ListItemText primary="Lệnh thua lỗ lớn" />
           </ListItem>
@@ -80,7 +83,7 @@ const Sidebar = () => {
             button
             component={Link}
             to="/missed-opportunity"
-            sx={{ pl: 4 }}
+            sx={{ pl: 4, color: "#000" }}
           >
             <ListItemText primary="Bỏ lỡ cơ hội tốt" />
           </ListItem>
@@ -90,27 +93,36 @@ const Sidebar = () => {
       <List>
         <ListItem button component={Link} to="/important-trades">
           <ListItemIcon>
-            <SettingsSystemDaydreamIcon />
+            <WarningIcon />
           </ListItemIcon>
-          <ListItemText primary="IMPORTANT NOTES" />
+          <ListItemText sx={{ color: "#000" }} primary="LƯU Ý QUAN TRỌNG" />
         </ListItem>
       </List>
       <Divider />
       <List>
         <ListItem button component={Link} to="/criteria">
           <ListItemIcon>
-            <SettingsSystemDaydreamIcon />
+            <CheckIcon />
           </ListItemIcon>
-          <ListItemText primary="CRITERIA BEFORE ENTRY ORDERS" />
+          <ListItemText sx={{ color: "#000" }} primary="TIÊU CHÍ TRƯỚC KHI VÀO LỆNH" />
+        </ListItem>
+      </List>
+      <Divider />
+      <List>
+        <ListItem button component={Link} to="/after-placing-order">
+          <ListItemIcon>
+            <SsidChartIcon />
+          </ListItemIcon>
+          <ListItemText sx={{ color: "#000" }} primary="QUẢN LÝ SAU KHI VÀO LỆNH" />
         </ListItem>
       </List>
       <Divider />
       <List>
         <ListItem button component={Link} to="/technical-analysis">
           <ListItemIcon>
-            <SettingsSystemDaydreamIcon />
+            <CandlestickChartIcon />
           </ListItemIcon>
-          <ListItemText primary="TECHNICAL ANALYSIS" />
+          <ListItemText sx={{ color: "#000" }} primary="PHÂN TÍCH KĨ THUẬT" />
         </ListItem>
       </List>
       <Divider />
