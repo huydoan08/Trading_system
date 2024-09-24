@@ -66,7 +66,7 @@ export default function AfterPlacingOrders() {
     },
   ];
   return (
-    <Box sx={{ mt: "-100px" }}>
+    <Box sx={{ mt: "0px" }}>
       <Box sx={{ padding: 4 }}>
         <Typography
           variant="h6"

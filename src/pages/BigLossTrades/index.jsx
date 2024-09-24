@@ -1,4 +1,4 @@
-import { Grid, Paper, Typography } from "@mui/material";
+import { Box, Grid, Paper, Typography } from "@mui/material";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import Image1M from "/image/1M_00002.png";
@@ -65,7 +65,7 @@ const timeFrames = [
 
 export default function BigLossTrades() {
   return (
-    <>
+    <Box>
       <Grid container spacing={2} style={{ padding: 16 }}>
         <Grid item xs={12} md={6}>
           <Paper style={{ padding: 16 }}>
@@ -82,6 +82,6 @@ export default function BigLossTrades() {
           ))}
         </Grid>
       </Grid>
-    </>
+    </Box>
   );
 }

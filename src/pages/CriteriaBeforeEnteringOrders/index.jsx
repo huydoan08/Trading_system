@@ -26,7 +26,7 @@ const criteria = [
 export default function BeforeEnterOrders() {
   return (
     <Box>
-      <Box sx={{ padding: 4, marginTop: "-400px" }}>
+      <Box sx={{ padding: 4, marginTop: "-200px" }}>
         <Typography variant="h6" gutterBottom fontSize={"40px"} fontWeight={700}>
           I. CÁC TIÊU CHÍ TRƯỚC KHI VÀO LỆNH
         </Typography>
@@ -42,7 +42,7 @@ export default function BeforeEnterOrders() {
                 dangerouslySetInnerHTML={{ __html: item.label }}
               />
             }
-            sx={{ color:"#000", marginBottom: 1, alignItems: "flex-start" }}
+            sx={{  marginBottom: 1, alignItems: "flex-start" }}
           />
         ))}
       </Box>

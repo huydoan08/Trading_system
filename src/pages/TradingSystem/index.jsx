@@ -16,7 +16,6 @@ const TradingSystem = () => {
       <Typography
         variant="subtitle1"
         sx={{ fontWeight: 700, fontSize: "40px" }}
-        color="#000"
       >
         ( KIÊN NHẪN, QUYẾT ĐOÁN, KỈ LUẬT )
       </Typography>
