@@ -1,74 +1,65 @@
-import { createTheme } from "@mui/material/styles";
-import DashboardIcon from "@mui/icons-material/Dashboard";
-import BarChartIcon from "@mui/icons-material/BarChart";
-import DescriptionIcon from "@mui/icons-material/Description";
-import LayersIcon from "@mui/icons-material/Layers";
-import { AppProvider } from "@toolpad/core/AppProvider";
-import { DashboardLayout as CustomLayout } from "@toolpad/core/DashboardLayout";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import TradingSystem from "./pages/TradingSystem";
-import BigWinTrades from "./pages/BigWinTrades";
-import BigLossTrades from "./pages/BigLossTrades";
-import ImporttantNotes from "./pages/ImportantNotes";
-import Criteria from "./pages/CriteriaBeforeEnteringOrders";
-import TechnicalAnalysis from "./pages/TechnicalAnalysis";
-import AfterPlacingOrders from "./pages/AfterPlacingOrders";
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import { createTheme } from '@mui/material/styles';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import BarChartIcon from '@mui/icons-material/BarChart';
+import DescriptionIcon from '@mui/icons-material/Description';
+import LayersIcon from '@mui/icons-material/Layers';
+import { AppProvider } from '@toolpad/core/AppProvider';
+import { DashboardLayout } from '@toolpad/core/DashboardLayout';
+// import type { Router, Navigation } from '@toolpad/core';
 
 const NAVIGATION = [
   {
-    segment: "trading-system",
-    title: "HỆ THỐNG GIAO DỊCH",
+    kind: 'header',
+    title: 'Main items',
+  },
+  {
+    segment: 'dashboard',
+    title: 'Dashboard',
     icon: <DashboardIcon />,
   },
   {
-    segment: "criteria",
-    title: "TIÊU CHÍ TRƯỚC KHI VÀO LỆNH",
-    icon: <LayersIcon />,
+    segment: 'orders',
+    title: 'Orders',
+    icon: <ShoppingCartIcon />,
   },
   {
-    segment: "after-placing-order",
-    title: "QUẢN LÝ SAU KHI VÀO LỆNH",
-    icon: <LayersIcon />,
+    kind: 'divider',
   },
   {
-    segment: "history",
-    title: "NHẬT KÍ GIAO DỊCH",
+    kind: 'header',
+    title: 'Analytics',
+  },
+  {
+    segment: 'reports',
+    title: 'Reports',
     icon: <BarChartIcon />,
     children: [
       {
-        segment: "big-win-trades",
-        title: "Lệnh thắng lớn",
+        segment: 'sales',
+        title: 'Sales',
         icon: <DescriptionIcon />,
       },
       {
-        segment: "big-loss-trades",
-        title: "Lệnh thua lỗ lớn",
+        segment: 'traffic',
+        title: 'Traffic',
         icon: <DescriptionIcon />,
       },
     ],
   },
   {
-    segment: "important-trades",
-    title: "LƯU Ý QUAN TRỌNG",
+    segment: 'integrations',
+    title: 'Integrations',
     icon: <LayersIcon />,
-  },
-  {
-    kind: "divider",
-  },
-  {
-    kind: "header",
-    title: "Analytics",
-  },
-  {
-    segment: "technical-analysis",
-    title: "PHÂN TÍCH KĨ THUẬT",
-    icon: <BarChartIcon />,
   },
 ];
 
-const theme = createTheme({
+const demoTheme = createTheme({
   cssVariables: {
-    colorSchemeSelector: "data-toolpad-color-scheme",
+    colorSchemeSelector: 'data-toolpad-color-scheme',
   },
   colorSchemes: { light: true, dark: true },
   breakpoints: {
@@ -82,45 +73,58 @@ const theme = createTheme({
   },
 });
 
-export default function App() {
+function DemoPageContent({ pathname }) {
   return (
-    <Router>
-      <AppProvider navigation={NAVIGATION} theme={theme}>
-        <CustomLayout>
-          <Routes>
-            <Route
-              path="/trading-system"
-              element={<TradingSystem pathname="trading-system" />}
-            />
-            <Route
-              path="/history/big-win-trades"
-              element={<BigWinTrades pathname="big-win-trades" />}
-            />
-            <Route
-              path="/history/big-loss-trades"
-              element={
-                <BigLossTrades pathname="big-loss-trades" />
-              }
-            />
-            <Route
-              path="/important-trades"
-              element={<ImporttantNotes pathname="important-trades" />}
-            />
-            <Route
-              path="/criteria"
-              element={<Criteria pathname="criteria" />}
-            />
-            <Route
-              path="/after-placing-order"
-              element={<AfterPlacingOrders pathname="after-placing-order" />}
-            />
-            <Route
-              path="/technical-analysis"
-              element={<TechnicalAnalysis pathname="technical-analysis" />}
-            />
-          </Routes>
-        </CustomLayout>
-      </AppProvider>
-    </Router>
+    <Box
+      sx={{
+        py: 4,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        textAlign: 'center',
+      }}
+    >
+      <Typography>Dashboard content for {pathname}</Typography>
+    </Box>
+  );
+}
+
+// interface DemoProps {
+//   /**
+//    * Injected by the documentation to work in an iframe.
+//    * Remove this when copying and pasting into your project.
+//    */
+//   window?: () => Window;
+// }
+
+export default function DashboardLayoutBasic(props) {
+  const { window } = props;
+
+  const [pathname, setPathname] = React.useState('/dashboard');
+
+  const router = React.useMemo(() => {
+    return {
+      pathname,
+      searchParams: new URLSearchParams(),
+      navigate: (path) => setPathname(String(path)),
+    };
+  }, [pathname]);
+
+  // Remove this const when copying and pasting into your project.
+  const demoWindow = window !== undefined ? window() : undefined;
+
+  return (
+    // preview-start
+    <AppProvider
+      navigation={NAVIGATION}
+      router={router}
+      theme={demoTheme}
+      window={demoWindow}
+    >
+      <DashboardLayout>
+        <DemoPageContent pathname={pathname} />
+      </DashboardLayout>
+    </AppProvider>
+    // preview-end
   );
 }
