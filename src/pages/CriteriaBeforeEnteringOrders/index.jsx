@@ -23,7 +23,7 @@ const criteria = [
   }
 ];
 
-export default function AfterEnterOrders() {
+export default function BeforeEnterOrders() {
   return (
     <Box>
       <Box sx={{ padding: 4, marginTop: "-400px" }}>

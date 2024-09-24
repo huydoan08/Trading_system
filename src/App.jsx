@@ -9,53 +9,66 @@ import DescriptionIcon from '@mui/icons-material/Description';
 import LayersIcon from '@mui/icons-material/Layers';
 import { AppProvider } from '@toolpad/core/AppProvider';
 import { DashboardLayout } from '@toolpad/core/DashboardLayout';
-// import type { Router, Navigation } from '@toolpad/core';
+import TradingSystem from './pages/TradingSystem';
+import BigWinTrades from './pages/BigWinTrades';
+import BigLossTrades from './pages/BigLossTrades';
+import ImporttantNotes from './pages/ImportantNotes';
+import BeforeEnterOrders from './pages/CriteriaBeforeEnteringOrders';
+import AfterPlacingOrders from './pages/AfterPlacingOrders';
+import TechnicalAnalysis from './pages/TechnicalAnalysis';
 
 const NAVIGATION = [
   {
-    kind: 'header',
-    title: 'Main items',
-  },
-  {
-    segment: 'dashboard',
-    title: 'Dashboard',
+    segment: "trading-system",
+    title: "HỆ THỐNG GIAO DỊCH",
     icon: <DashboardIcon />,
   },
   {
-    segment: 'orders',
-    title: 'Orders',
-    icon: <ShoppingCartIcon />,
+    segment: "criteria",
+    title: "TIÊU CHÍ TRƯỚC KHI VÀO LỆNH",
+    icon: <LayersIcon />,
   },
   {
-    kind: 'divider',
+    segment: "after-placing-order",
+    title: "QUẢN LÝ SAU KHI VÀO LỆNH",
+    icon: <LayersIcon />,
   },
   {
-    kind: 'header',
-    title: 'Analytics',
-  },
-  {
-    segment: 'reports',
-    title: 'Reports',
+    segment: "history",
+    title: "NHẬT KÍ GIAO DỊCH",
     icon: <BarChartIcon />,
     children: [
       {
-        segment: 'sales',
-        title: 'Sales',
+        segment: "big-win-trades",
+        title: "Lệnh thắng lớn",
         icon: <DescriptionIcon />,
       },
       {
-        segment: 'traffic',
-        title: 'Traffic',
+        segment: "big-loss-trades",
+        title: "Lệnh thua lỗ lớn",
         icon: <DescriptionIcon />,
       },
     ],
   },
   {
-    segment: 'integrations',
-    title: 'Integrations',
+    segment: "important-trades",
+    title: "LƯU Ý QUAN TRỌNG",
     icon: <LayersIcon />,
   },
+  {
+    kind: "divider",
+  },
+  {
+    kind: "header",
+    title: "Analytics",
+  },
+  {
+    segment: "technical-analysis",
+    title: "PHÂN TÍCH KĨ THUẬT",
+    icon: <BarChartIcon />,
+  },
 ];
+
 
 const demoTheme = createTheme({
   cssVariables: {
@@ -74,28 +87,52 @@ const demoTheme = createTheme({
 });
 
 function DemoPageContent({ pathname }) {
-  return (
-    <Box
-      sx={{
-        py: 4,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        textAlign: 'center',
-      }}
-    >
-      <Typography>Dashboard content for {pathname}</Typography>
-    </Box>
-  );
+  switch (pathname) {
+    case '/trading-system':
+      return (
+        <TradingSystem/>
+      );
+    case '/history/big-win-trades':
+      return (
+       <BigWinTrades/>
+      );
+    case '/history/big-loss-trades':
+      return (
+       <BigLossTrades/>
+      );
+    case '/important-trades':
+      return (
+       <ImporttantNotes/>
+      );
+    case '/criteria':
+      return (
+       <BeforeEnterOrders/>
+      );
+    case '/after-placing-order':
+      return (
+       <AfterPlacingOrders/>
+      );
+    case '/technical-analysis':
+      return (
+       <TechnicalAnalysis/>
+      );
+    default:
+      return (
+        <Box
+          sx={{
+            py: 4,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            textAlign: 'center',
+          }}
+        >
+          <Typography>404 - Page not found</Typography>
+        </Box>
+      );
+  }
 }
 
-// interface DemoProps {
-//   /**
-//    * Injected by the documentation to work in an iframe.
-//    * Remove this when copying and pasting into your project.
-//    */
-//   window?: () => Window;
-// }
 
 export default function DashboardLayoutBasic(props) {
   const { window } = props;
@@ -110,11 +147,9 @@ export default function DashboardLayoutBasic(props) {
     };
   }, [pathname]);
 
-  // Remove this const when copying and pasting into your project.
   const demoWindow = window !== undefined ? window() : undefined;
 
   return (
-    // preview-start
     <AppProvider
       navigation={NAVIGATION}
       router={router}
@@ -125,6 +160,5 @@ export default function DashboardLayoutBasic(props) {
         <DemoPageContent pathname={pathname} />
       </DashboardLayout>
     </AppProvider>
-    // preview-end
   );
 }
