@@ -5,6 +5,8 @@ import {
   ListItem,
   ListItemText,
 } from "@mui/material";
+import Header from "../../components/Header";
+import Title from "../../components/Title";
 
 const timeFrames = [
   {
@@ -34,23 +36,8 @@ const TechnicalAnalysis = () => {
   return (
     <Box>
       <Box sx={{ padding: 4 }}>
-      <Typography
-          variant="h6"
-          align="center"
-          fontWeight="bold"
-          gutterBottom
-          fontSize={"50px"}
-        >
-          PHÂN TÍCH KĨ THUẬT 
-        </Typography>
-        <Typography
-          variant="h6"
-          gutterBottom
-          fontSize={"30px"}
-          fontWeight={700}
-        >
-          I. PHÂN TÍCH VỀ ĐA KHUNG THỜI GIAN
-        </Typography>
+        <Header>PHÂN TÍCH KĨ THUẬT </Header>
+        <Title>I. PHÂN TÍCH VỀ ĐA KHUNG THỜI GIAN</Title>
         <List>
           {timeFrames.map((it, idx) => {
             return (

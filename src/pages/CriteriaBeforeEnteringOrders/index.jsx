@@ -4,6 +4,7 @@ import {
   Checkbox,
   FormControlLabel,
 } from "@mui/material";
+import Title from "../../components/Title";
 
 const criteria = [
   {
@@ -27,9 +28,7 @@ export default function BeforeEnterOrders() {
   return (
     <Box>
       <Box sx={{ padding: 4, marginTop: "-200px" }}>
-        <Typography variant="h6" gutterBottom fontSize={"40px"} fontWeight={700}>
-          I. CÁC TIÊU CHÍ TRƯỚC KHI VÀO LỆNH
-        </Typography>
+        <Title>I. CÁC TIÊU CHÍ TRƯỚC KHI VÀO LỆNH</Title>
         {criteria.map((item, index) => (
           <FormControlLabel
             key={index}

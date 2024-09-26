@@ -17,6 +17,7 @@ import Image03 from "/image/03.png";
 import Image04 from "/image/04.png";
 import Image05 from "/image/05.png";
 import Image06 from "/image/06.png";
+import Header from "../../components/Header";
 
 export default function AfterPlacingOrders() {
   const images = [
@@ -68,16 +69,7 @@ export default function AfterPlacingOrders() {
   return (
     <Box sx={{ mt: "0px" }}>
       <Box sx={{ padding: 4 }}>
-        <Typography
-          variant="h6"
-          align="center"
-          fontWeight="bold"
-          gutterBottom
-          fontSize={"50px"}
-          mb={10}
-        >
-          QUẢN LÝ LỆNH SAO CHO TỐI ƯU ?
-        </Typography>
+        <Header>QUẢN LÝ LỆNH SAO CHO TỐI ƯU ?</Header>
         <Box>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>

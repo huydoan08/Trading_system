@@ -1,20 +1,18 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import { createTheme } from '@mui/material/styles';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import BarChartIcon from '@mui/icons-material/BarChart';
-import DescriptionIcon from '@mui/icons-material/Description';
-import LayersIcon from '@mui/icons-material/Layers';
-import { AppProvider } from '@toolpad/core/AppProvider';
-import { DashboardLayout } from '@toolpad/core/DashboardLayout';
-import TradingSystem from './pages/TradingSystem';
-import BigWinTrades from './pages/BigWinTrades';
-import BigLossTrades from './pages/BigLossTrades';
-import ImporttantNotes from './pages/ImportantNotes';
-import BeforeEnterOrders from './pages/CriteriaBeforeEnteringOrders';
-import AfterPlacingOrders from './pages/AfterPlacingOrders';
-import TechnicalAnalysis from './pages/TechnicalAnalysis';
+import * as React from "react";
+import { createTheme } from "@mui/material/styles";
+import DashboardIcon from "@mui/icons-material/Dashboard";
+import BarChartIcon from "@mui/icons-material/BarChart";
+import DescriptionIcon from "@mui/icons-material/Description";
+import LayersIcon from "@mui/icons-material/Layers";
+import { AppProvider } from "@toolpad/core/AppProvider";
+import { DashboardLayout } from "@toolpad/core/DashboardLayout";
+import TradingSystem from "./pages/TradingSystem";
+import BigWinTrades from "./pages/BigWinTrades";
+import BigLossTrades from "./pages/BigLossTrades";
+import ImporttantNotes from "./pages/ImportantNotes";
+import BeforeEnterOrders from "./pages/CriteriaBeforeEnteringOrders";
+import AfterPlacingOrders from "./pages/AfterPlacingOrders";
+import TechnicalAnalysis from "./pages/TechnicalAnalysis";
 
 const NAVIGATION = [
   {
@@ -68,10 +66,9 @@ const NAVIGATION = [
   },
 ];
 
-
 const demoTheme = createTheme({
   cssVariables: {
-    colorSchemeSelector: 'data-toolpad-color-scheme',
+    colorSchemeSelector: "data-toolpad-color-scheme",
   },
   colorSchemes: { light: true, dark: true },
   breakpoints: {
@@ -87,46 +84,39 @@ const demoTheme = createTheme({
 
 function DemoPageContent({ pathname }) {
   switch (pathname) {
-    case '/trading-system':
-      return (
-        <TradingSystem/>
-      );
-    case '/history/big-win-trades':
-      return (
-       <BigWinTrades/>
-      );
-    case '/history/big-loss-trades':
-      return (
-       <BigLossTrades/>
-      );
-    case '/important-trades':
-      return (
-       <ImporttantNotes/>
-      );
-    case '/criteria':
-      return (
-       <BeforeEnterOrders/>
-      );
-    case '/after-placing-order':
-      return (
-       <AfterPlacingOrders/>
-      );
-    case '/technical-analysis':
-      return (
-       <TechnicalAnalysis/>
-      );
+    case "/trading-system":
+      return <TradingSystem />;
+    case "/history/big-win-trades":
+      return <BigWinTrades />;
+    case "/history/big-loss-trades":
+      return <BigLossTrades />;
+    case "/important-trades":
+      return <ImporttantNotes />;
+    case "/criteria":
+      return <BeforeEnterOrders />;
+    case "/after-placing-order":
+      return <AfterPlacingOrders />;
+    case "/technical-analysis":
+      return <TechnicalAnalysis />;
     default:
-      return (
-       <TradingSystem/>
-      );
+      return <TradingSystem />;
   }
 }
 
+export default function DashboardLayoutBasic() {
 
-export default function DashboardLayoutBasic(props) {
-  const { window } = props;
+  const [pathname, setPathname] = React.useState("/dashboard");
 
-  const [pathname, setPathname] = React.useState('/dashboard');
+  React.useEffect(() => {
+    const logo = document.querySelector(".css-gua3uq");
+    const textElement = document.querySelector(".css-i9gxme")
+    const theme = document.querySelector(".css-15wfblr-MuiButtonBase-root-MuiIconButton-root")
+    logo.style.display = "none";
+    theme.style.color = "#3e6291de";
+    textElement.innerText = "TRADING SYSTEMS";
+    textElement.style.fontSize = "24px"; 
+    textElement.style.fontWeight = "bold";
+  }, []);
 
   const router = React.useMemo(() => {
     return {
@@ -136,14 +126,11 @@ export default function DashboardLayoutBasic(props) {
     };
   }, [pathname]);
 
-  const demoWindow = window !== undefined ? window() : undefined;
-
   return (
     <AppProvider
       navigation={NAVIGATION}
       router={router}
       theme={demoTheme}
-      window={demoWindow}
     >
       <DashboardLayout>
         <DemoPageContent pathname={pathname} />

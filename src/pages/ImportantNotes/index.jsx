@@ -5,6 +5,7 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
+import Header from "../../components/Header";
 
 export default function ImporttantNotes() {
   const data = [
@@ -39,15 +40,7 @@ export default function ImporttantNotes() {
   return (
     <Box>
       <Box sx={{ padding: 4 }}>
-        <Typography
-          variant="h6"
-          align="center"
-          fontWeight="bold"
-          gutterBottom
-          fontSize={"50px"}
-        >
-          LƯU Ý QUAN TRỌNG
-        </Typography>
+        <Header> LƯU Ý QUAN TRỌNG</Header>
         <List>
           {data.map((it, idx) => {
             return (
