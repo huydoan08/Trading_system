@@ -111,6 +111,7 @@ export default function DashboardLayoutBasic() {
     const logo = document.querySelector(".css-gua3uq");
     const textElement = document.querySelector(".css-i9gxme")
     const theme = document.querySelector(".css-15wfblr-MuiButtonBase-root-MuiIconButton-root")
+    if (!theme || !logo) return;
     logo.style.display = "none";
     theme.style.color = "#3e6291de";
     textElement.innerText = "TRADING SYSTEMS";
