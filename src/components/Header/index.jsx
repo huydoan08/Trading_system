@@ -1,9 +1,24 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
-export default function Header({children}) {
-    return (
-        <Typography variant="h6" gutterBottom fontSize={"45px"} align="center" fontWeight={700}>
-          {children}
-        </Typography>
-    )
-}
+const Header = ({children}) => {
+  return (
+    <Box sx={{ padding: 2, textAlign: "center" }}>
+      <Typography
+        variant="h6"
+        fontWeight={700}
+        sx={{
+          fontSize: {
+            xs: "30px",
+            sm: "30px",
+            md: "40px",
+            lg: "50px",
+          },
+        }}
+      >
+        {children}
+      </Typography>
+    </Box>
+  );
+};
+
+export default Header;

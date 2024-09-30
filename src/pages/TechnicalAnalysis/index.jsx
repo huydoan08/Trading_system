@@ -1,12 +1,7 @@
-import {
-  Box,
-  Typography,
-  List,
-  ListItem,
-  ListItemText,
-} from "@mui/material";
+import { Box, List, ListItem } from "@mui/material";
 import Header from "../../components/Header";
 import Title from "../../components/Title";
+import ItemLists from "../../components/ItemLists";
 
 const timeFrames = [
   {
@@ -43,70 +38,24 @@ const TechnicalAnalysis = () => {
             return (
               <ListItem
                 key={idx}
-                sx={{ display: "flex", alignItems: "flex-start" }}
               >
-                <Box
-                  sx={{
-                    width: "10px",
-                    height: "10px",
-                    backgroundColor: "black",
-                    borderRadius: "50%",
-                    marginRight: "30px",
-                    flexShrink: 0,
-                    mt: "20px",
-                  }}
-                />
-                <ListItemText
-                  primaryTypographyProps={{
-                    fontSize: "30px",
-                    fontWeight: "700",
-                  }}
-                  primary={it.label}
-                />
+                <ItemLists item={it.label}/>
               </ListItem>
             );
           })}
         </List>
-
-        <div>
-          <Typography
-            variant="h5"
-            gutterBottom
-            fontSize={"30px"}
-            fontWeight={700}
-          >
-            II. PHÂN TÍCH VỀ HỖ TRỢ, KHÁNG CỰ CHUYÊN SÂU
-          </Typography>
+        <Box>
+          <Title> II. PHÂN TÍCH VỀ HỖ TRỢ, KHÁNG CỰ CHUYÊN SÂU</Title>
           <List>
-            {analysisLists.map((it, idx) => {
+            {analysisLists.map((item, idx) => {
               return (
-                <ListItem
-                  key={idx}
-                  sx={{ display: "flex", alignItems: "flex-start" }}
-                >
-                  <Box
-                    sx={{
-                      width: "10px",
-                      height: "10px",
-                      backgroundColor: "black",
-                      borderRadius: "50%",
-                      marginRight: "30px",
-                      flexShrink: 0,
-                      mt: "20px",
-                    }}
-                  />
-                  <ListItemText
-                    primaryTypographyProps={{
-                      fontSize: "30px",
-                      fontWeight: "700",
-                    }}
-                    primary={it}
-                  />
+                <ListItem key={idx}>
+                  <ItemLists item={item} />
                 </ListItem>
               );
             })}
           </List>
-        </div>
+        </Box>
       </Box>
     </Box>
   );

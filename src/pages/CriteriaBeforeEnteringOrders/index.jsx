@@ -1,10 +1,10 @@
 import {
   Box,
-  Typography,
-  Checkbox,
-  FormControlLabel,
+  List,
+  ListItem,
 } from "@mui/material";
 import Title from "../../components/Title";
+import ItemLists from "../../components/ItemLists";
 
 const criteria = [
   {
@@ -27,23 +27,19 @@ const criteria = [
 export default function BeforeEnterOrders() {
   return (
     <Box>
-      <Box sx={{ padding: 4, marginTop: "-200px" }}>
+      <Box sx={{ padding: 4, marginTop: "-50px" }}>
         <Title>I. CÁC TIÊU CHÍ TRƯỚC KHI VÀO LỆNH</Title>
-        {criteria.map((item, index) => (
-          <FormControlLabel
-            key={index}
-            control={<Checkbox sx={{ pt: -1}} />}
-            label={
-              <Typography
-                variant="body1"
-                fontSize="26px"
-                fontWeight="bold"
-                dangerouslySetInnerHTML={{ __html: item.label }}
-              />
-            }
-            sx={{  marginBottom: 1, alignItems: "flex-start" }}
-          />
-        ))}
+        <List>
+          {criteria.map((it, idx) => {
+            return (
+              <ListItem
+                key={idx}
+              >
+                <ItemLists item={it.label}/>
+              </ListItem>
+            );
+          })}
+        </List>
       </Box>
     </Box>
   );

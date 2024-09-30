@@ -18,6 +18,7 @@ import Image04 from "/image/04.png";
 import Image05 from "/image/05.png";
 import Image06 from "/image/06.png";
 import Header from "../../components/Header";
+import ItemLists from "../../components/ItemLists";
 
 export default function AfterPlacingOrders() {
   const images = [
@@ -87,24 +88,7 @@ export default function AfterPlacingOrders() {
                           key={idx}
                           sx={{ display: "flex", alignItems: "flex-start" }}
                         >
-                          <Box
-                            sx={{
-                              width: "10px",
-                              height: "10px",
-                              backgroundColor: "black",
-                              borderRadius: "50%",
-                              marginRight: "30px",
-                              flexShrink: 0,
-                              mt: "20px",
-                            }}
-                          />
-                          <ListItemText
-                            primaryTypographyProps={{
-                              fontSize: "30px",
-                              fontWeight: "700",
-                            }}
-                            primary={it?.info}
-                          />
+                          <ItemLists item={it?.info} />
                         </ListItem>
                       );
                     })}
