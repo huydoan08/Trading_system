@@ -9,18 +9,18 @@ import ItemLists from "../../components/ItemLists";
 const criteria = [
   {
     label:
-      "Khung thời gian giao dịch phải ĐỒNG THUẬN ? (Khung thời gian giao dịch phải đồng thuận với khung thời gian lớn)",
+      "Khung thời gian giao dịch phải ĐỒNG THUẬN với khung thời gian lớn hơn.",
   },
   {
     label:
-      "Có xác nhận sóng hồi để TỐI ƯU ĐIỂM VÀO LỆNH ĐẸP và TÌM RA STOPLOSS ? (Phải đợi có sự điều chỉnh, không tham gia sớm)",
+      "Có xác nhận sóng hồi ở khung thời gian nhỏ hơn để TỐI ƯU ĐIỂM VÀO LỆNH ĐẸP. (Phải đợi có sự điều chỉnh, không tham gia sớm)",
   },
   {
-    label: "Có xác nhận tín hiệu Price Action ? (Nến đảo chiều)",
+    label: "Có xác nhận tín hiệu Price Action. (Nến đảo chiều)",
   },
   {
     label:
-      "Không cố tính ĐOÁN ĐỈNH, ĐOÁN ĐÁY → Chỉ FOLLOW theo xu hướng? Quản lý lệnh theo hiệu lực con sóng ở khung thời gian nhỏ hơn (khung M30, H1, H2, H4)",
+      "Không cố tình đi đoán đỉnh, đoán đáy → Chỉ follow theo xu hướng.",
   }
 ];
 

@@ -66,6 +66,9 @@ export default function AfterPlacingOrders() {
     {
       info: "Giao dịch theo xu hướng - Cắt vị thế lỗ nhanh chóng - Duy trì vị thế lời - Đừng đóng vị thế khi đang có khoản lợi nhuận lớn.",
     },
+    {
+      info: "Khi mà khung 1D đã đi được một quãng đủ xa, và có dấu hiệu suy yếu ở khung thời gian nhỏ hơn thì nên quyết đoán chốt lời, chờ đợi xác nhận điều chỉnh xong mới vào lại.",
+    },
   ];
   return (
     <Box sx={{ mt: "0px" }}>
