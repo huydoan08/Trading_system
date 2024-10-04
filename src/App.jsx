@@ -2,8 +2,16 @@ import * as React from "react";
 import { createTheme } from "@mui/material/styles";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import BarChartIcon from "@mui/icons-material/BarChart";
-import DescriptionIcon from "@mui/icons-material/Description";
+import GroupsIcon from '@mui/icons-material/Groups';
 import LayersIcon from "@mui/icons-material/Layers";
+import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
+import StarsIcon from '@mui/icons-material/Stars';
+import HistoryToggleOffIcon from '@mui/icons-material/HistoryToggleOff';
+import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
+import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
+import SailingIcon from '@mui/icons-material/Sailing';
+import MoodIcon from '@mui/icons-material/Mood';
+import SettingsAccessibilityIcon from '@mui/icons-material/SettingsAccessibility';
 import { AppProvider } from "@toolpad/core/AppProvider";
 import { DashboardLayout } from "@toolpad/core/DashboardLayout";
 import TradingSystem from "./pages/TradingSystem";
@@ -13,6 +21,10 @@ import ImporttantNotes from "./pages/ImportantNotes";
 import BeforeEnterOrders from "./pages/CriteriaBeforeEnteringOrders";
 import AfterPlacingOrders from "./pages/AfterPlacingOrders";
 import TechnicalAnalysis from "./pages/TechnicalAnalysis";
+import CrowdPsychologyAnalysis from "./pages/CrowdPsychologyAnalysis";
+import PricingAnalysis from "./pages/PricingAnalysis";
+import PersonalFeelingsAnalysis from "./pages/PersonalFeelingsAnalysis";
+import Phylosophy from "./pages/Phylosophy";
 
 const NAVIGATION = [
   {
@@ -28,29 +40,29 @@ const NAVIGATION = [
   {
     segment: "after-placing-order",
     title: "QUẢN LÝ SAU KHI VÀO LỆNH",
-    icon: <LayersIcon />,
+    icon: <TipsAndUpdatesIcon />,
   },
   {
     segment: "history",
     title: "NHẬT KÍ GIAO DỊCH",
-    icon: <BarChartIcon />,
+    icon: <HistoryToggleOffIcon />,
     children: [
       {
         segment: "big-win-trades",
         title: "Lệnh thắng lớn",
-        icon: <DescriptionIcon />,
+        icon: <ArrowCircleUpIcon />,
       },
       {
         segment: "big-loss-trades",
         title: "Lệnh thua lỗ lớn",
-        icon: <DescriptionIcon />,
+        icon: <ArrowCircleDownIcon />,
       },
     ],
   },
   {
     segment: "important-trades",
     title: "LƯU Ý QUAN TRỌNG",
-    icon: <LayersIcon />,
+    icon: <StarsIcon />,
   },
   {
     kind: "divider",
@@ -63,6 +75,33 @@ const NAVIGATION = [
     segment: "technical-analysis",
     title: "PHÂN TÍCH KĨ THUẬT",
     icon: <BarChartIcon />,
+  },
+  {
+    segment: "crowd-psychology-analysis",
+    title: "PHÂN TÍCH TÂM LÝ ĐÁM ĐÔNG",
+    icon: <GroupsIcon />,
+  },
+  {
+    segment: "pricing-analysis",
+    title: "PHÂN TÍCH BÀI TOÁN LÀM GIÁ",
+    icon: <SailingIcon />,
+  },
+  {
+    segment: "personal-feelings-analysis",
+    title: "PHÂN TÍCH CẢM XÚC BẢN THÂN",
+    icon: <SettingsAccessibilityIcon />,
+  },
+  {
+    kind: "divider",
+  },
+  {
+    kind: "header",
+    title: "Philosophy",
+  },
+  {
+    segment: "phylosophy-of-life",
+    title: "GIAO DỊCH VS CUỘC ĐỜI",
+    icon: <MoodIcon />,
   },
 ];
 
@@ -98,6 +137,14 @@ function DemoPageContent({ pathname }) {
       return <AfterPlacingOrders />;
     case "/technical-analysis":
       return <TechnicalAnalysis />;
+    case "/crowd-psychology-analysis":
+      return <CrowdPsychologyAnalysis />;
+    case "/pricing-analysis":
+      return <PricingAnalysis />;
+    case "/personal-feelings-analysis":
+      return <PersonalFeelingsAnalysis />;
+    case "/phylosophy-of-life":
+      return <Phylosophy />;
     default:
       return <TradingSystem />;
   }
