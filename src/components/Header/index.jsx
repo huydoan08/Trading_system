@@ -1,11 +1,12 @@
 import { Box, Typography } from "@mui/material";
 
-const Header = ({children}) => {
+const Header = ({children, color="#000000"}) => {
   return (
     <Box sx={{ padding: 2, textAlign: "center" }}>
       <Typography
         variant="h6"
         fontWeight={700}
+        color={color}
         sx={{
           fontSize: {
             xs: "30px",

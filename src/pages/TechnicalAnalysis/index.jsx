@@ -30,7 +30,7 @@ const analysisLists = [
 const TechnicalAnalysis = () => {
   return (
     <Box>
-      <Box sx={{ padding: 4 }}>
+      <Box paddingLeft={8} display={"flex"} flexDirection={"column"} justifyContent={"start"}>
         <Header>PHÂN TÍCH KĨ THUẬT </Header>
         <Title>I. PHÂN TÍCH VỀ ĐA KHUNG THỜI GIAN</Title>
         <List>

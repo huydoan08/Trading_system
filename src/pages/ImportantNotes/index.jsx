@@ -1,10 +1,4 @@
-import {
-  Box,
-  List,
-  ListItem,
-  ListItemText,
-  Typography,
-} from "@mui/material";
+import { Box, List, ListItem, ListItemText, Typography } from "@mui/material";
 import Header from "../../components/Header";
 import ItemLists from "../../components/ItemLists";
 
@@ -39,22 +33,29 @@ export default function ImporttantNotes() {
     },
   ];
   return (
-    <Box>
-      <Box sx={{ padding: 4 }}>
-        <Header> LƯU Ý QUAN TRỌNG</Header>
-        <List>
-          {data.map((it, idx) => {
-            return (
-              <ListItem
-                key={idx}
-                sx={{ display: "flex", alignItems: "flex-start" }}
-              >
-                 <ItemLists item={it?.info}/>
-              </ListItem>
-            );
-          })}
-        </List>
-      </Box>
+    <Box
+      display="flex"
+      alignItems="center"
+      justifyContent="start"
+      flexDirection="column"
+      margin="0 auto"
+      minHeight="100vh"
+      textAlign="center"
+      padding={8}
+    >
+      <Header> LƯU Ý QUAN TRỌNG</Header>
+      <List>
+        {data.map((it, idx) => {
+          return (
+            <ListItem
+              key={idx}
+              sx={{ display: "flex", alignItems: "flex-start" }}
+            >
+              <ItemLists item={it?.info} />
+            </ListItem>
+          );
+        })}
+      </List>
     </Box>
   );
 }

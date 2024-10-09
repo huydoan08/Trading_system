@@ -71,7 +71,7 @@ export default function AfterPlacingOrders() {
     },
   ];
   return (
-    <Box sx={{ mt: "0px" }}>
+    <Box>
       <Box sx={{ padding: 4 }}>
         <Header>QUẢN LÝ LỆNH SAO CHO TỐI ƯU ?</Header>
         <Box>
