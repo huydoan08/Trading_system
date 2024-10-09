@@ -3,19 +3,15 @@ import Header from "../../components/Header";
 import Title from "../../components/Title";
 import ItemLists from "../../components/ItemLists";
 
+
+const RSI = [
+  "Khi xuất hiện các dấu hiệu lực mua giảm, lực bán tăng (dấu hiệu của sự phân kì). Giá có khả năng đảo chiều từ tăng thành giảm",
+  "Khi xuất hiện các dấu hiệu lực bán giảm, lực mua tăng (dấu hiệu của sự hội tụ). Giá có khả năng đảo chiều từ giảm thành tăng"
+];
 const timeFrames = [
-  {
-    label:
-      "Khung thời gian phản ánh nhóm người tham gia vào thị trường là những nhóm người nào.",
-  },
-  {
-    label:
-      "Xu hướng ở khung thời gian nhỏ sẽ kéo theo xu hướng ở khung thời gian lớn hơn.",
-  },
-  {
-    label:
-      "Khi ở khung nhỏ sideway thì có thể giao dịch ở khung thời gian lớn hơn nếu có xu hướng rõ rệt.",
-  },
+  "Khung thời gian phản ánh nhóm người tham gia vào thị trường là những nhóm người nào.",
+  "Xu hướng ở khung thời gian nhỏ sẽ kéo theo xu hướng ở khung thời gian lớn hơn.",
+  "Khi ở khung nhỏ sideway thì có thể giao dịch ở khung thời gian lớn hơn nếu có xu hướng rõ rệt.",
 ];
 
 const analysisLists = [
@@ -27,25 +23,43 @@ const analysisLists = [
   "Tại vùng hỗ trợ kháng cự mà thấy có dấu hiệu phá qua thì cần đảo ngược vị thế chứ không cố gồng lệnh, không cố chấp.",
 ];
 
+
 const TechnicalAnalysis = () => {
   return (
     <Box>
-      <Box paddingLeft={8} display={"flex"} flexDirection={"column"} justifyContent={"start"}>
+      <Box
+        paddingLeft={8}
+        display={"flex"}
+        flexDirection={"column"}
+        justifyContent={"start"}
+      >
         <Header>PHÂN TÍCH KĨ THUẬT </Header>
-        <Title>I. PHÂN TÍCH VỀ ĐA KHUNG THỜI GIAN</Title>
-        <List>
-          {timeFrames.map((it, idx) => {
-            return (
-              <ListItem
-                key={idx}
-              >
-                <ItemLists item={it.label}/>
-              </ListItem>
-            );
-          })}
-        </List>
         <Box>
-          <Title> II. PHÂN TÍCH VỀ HỖ TRỢ, KHÁNG CỰ CHUYÊN SÂU</Title>
+          <Title>I. BỘ CÔNG CỤ CHỈ BÁO RSI</Title>
+          <List>
+            {RSI.map((it, idx) => {
+              return (
+                <ListItem key={idx}>
+                  <ItemLists item={it} />
+                </ListItem>
+              );
+            })}
+          </List>
+        </Box>
+        <Box>
+          <Title>II. PHÂN TÍCH VỀ ĐA KHUNG THỜI GIAN</Title>
+          <List>
+            {timeFrames.map((it, idx) => {
+              return (
+                <ListItem key={idx}>
+                  <ItemLists item={it} />
+                </ListItem>
+              );
+            })}
+          </List>
+        </Box>
+        <Box>
+          <Title> III. PHÂN TÍCH VỀ HỖ TRỢ, KHÁNG CỰ</Title>
           <List>
             {analysisLists.map((item, idx) => {
               return (

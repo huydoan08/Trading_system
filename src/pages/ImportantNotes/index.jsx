@@ -1,4 +1,4 @@
-import { Box, List, ListItem, ListItemText, Typography } from "@mui/material";
+import { Box, List, ListItem } from "@mui/material";
 import Header from "../../components/Header";
 import ItemLists from "../../components/ItemLists";
 
