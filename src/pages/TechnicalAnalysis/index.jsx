@@ -6,7 +6,9 @@ import ItemLists from "../../components/ItemLists";
 
 const RSI = [
   "Khi xuất hiện các dấu hiệu lực mua giảm, lực bán tăng (dấu hiệu của sự phân kì). Giá có khả năng đảo chiều từ tăng thành giảm",
-  "Khi xuất hiện các dấu hiệu lực bán giảm, lực mua tăng (dấu hiệu của sự hội tụ). Giá có khả năng đảo chiều từ giảm thành tăng"
+  "Khi xuất hiện các dấu hiệu lực bán giảm, lực mua tăng (dấu hiệu của sự hội tụ). Giá có khả năng đảo chiều từ giảm thành tăng",
+  "Khi RSI vượt ra vùng 80 => lực mua mạnh. Có khả năng giá sẽ tiếp tục tăng",
+  "Khi RSI xuống dưới vùng 20 => lực bán mạnh. Có khả năng giá sẽ tiếp tục rơi"
 ];
 const timeFrames = [
   "Khung thời gian phản ánh nhóm người tham gia vào thị trường là những nhóm người nào.",
