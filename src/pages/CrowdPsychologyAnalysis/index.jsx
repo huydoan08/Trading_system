@@ -13,24 +13,28 @@ const timeFrames = [
       "Khi mà đám đông còn hoài nghi thì cá mập sẽ bắt đầu đẩy giá đi lên.",
   },
   {
-    label:
-      "Khi mà đám đông ai cũng bay vào thì lúc đó cá mập sẽ xả hàng.",
+    label: "Khi mà đám đông ai cũng bay vào thì lúc đó cá mập sẽ xả hàng.",
   },
 ];
 
 const CrowdPsychologyAnalysis = () => {
   return (
-    <Box>
-      <Box sx={{ padding: 4 }}>
-        <Header>PHÂN TÍCH TÂM LÝ ĐÁM ĐÔNG</Header>
+    <Box
+      padding={8}
+      display="flex"
+      alignItems="center"
+      justifyContent="start"
+      flexDirection="column"
+      minHeight="100vh"
+    >
+      <Header>PHÂN TÍCH TÂM LÝ ĐÁM ĐÔNG</Header>
+      <Box textAlign={"left"}>
         <Title>I. PHÂN TÍCH TÂM LÝ ĐÁM ĐÔNG</Title>
         <List>
           {timeFrames.map((it, idx) => {
             return (
-              <ListItem
-                key={idx}
-              >
-                <ItemLists item={it.label}/>
+              <ListItem key={idx}>
+                <ItemLists item={it.label} />
               </ListItem>
             );
           })}

@@ -22,20 +22,24 @@ const timeFrames = [
   },
 ];
 
-
 const PersonalFeelingsAnalysis = () => {
   return (
     <Box>
-      <Box sx={{ padding: 4 }}>
+      <Box
+        padding={8}
+        display="flex"
+        alignItems="start"
+        justifyContent="start"
+        flexDirection="column"
+        minHeight="100vh"
+      >
         <Header>PHÂN TÍCH CẢM XÚC VÀ TÂM LÝ CỦA CHÍNH BẢN THÂN</Header>
         <Title>I. PHÂN TÍCH CẢM XÚC VÀ TÂM LÝ CỦA CHÍNH BẢN THÂN</Title>
         <List>
           {timeFrames.map((it, idx) => {
             return (
-              <ListItem
-                key={idx}
-              >
-                <ItemLists item={it.label}/>
+              <ListItem key={idx}>
+                <ItemLists item={it.label} />
               </ListItem>
             );
           })}
