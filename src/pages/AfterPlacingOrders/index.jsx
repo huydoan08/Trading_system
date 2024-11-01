@@ -55,10 +55,13 @@ export default function AfterPlacingOrders() {
       info: "Tuyệt đối không nới lỏng SL ra xa, nếu nó quét SL thì hãy cứ để cho nó quét, ta sẽ tìm 1 cơ hội khác để vào lệnh, thị trường luôn đúng, mọi tình huống đều có thể xảy ra.",
     },
     {
-      info: "Không bị cảm xúc chi phối vào và chốt lời non, cứ follow theo cấu trúc sóng và dời SL về những vùng giá quan trọng.",
+      info: "Chỉ dời SL theo cấu trúc sóng về những vùng giá quan trọng.",
     },
     {
-      info: "Chỉ nhồi thêm lệnh khi giá đã có xác nhận của sự điều chỉnh.",
+      info: "Không bị cảm xúc chi phối vào và chốt lời non.",
+    },
+    {
+      info: "Chỉ nhồi thêm lệnh khi giá đã đi một khoảng xa và có lợi nhuận, ko để bị hở sườn.",
     },
     {
       info: "Tiền kiếm được trong lúc chờ đợi, chứ không phải là liên tục vào lệnh.",
@@ -67,7 +70,7 @@ export default function AfterPlacingOrders() {
       info: "Giao dịch theo xu hướng - Cắt vị thế lỗ nhanh chóng - Duy trì vị thế lời - Đừng đóng vị thế khi đang có khoản lợi nhuận lớn.",
     },
     {
-      info: "Khi mà khung 1D đã đi được một quãng đủ xa, và có dấu hiệu suy yếu ở khung thời gian nhỏ hơn thì nên quyết đoán chốt lời, chờ đợi xác nhận điều chỉnh xong mới vào lại.",
+      info: "Khi mà RSI khung H2 cho thấy dấu hiệu của sự đảo chiều xu hướng, cần quyết đoán chốt lời, biết đủ thường vui.",
     },
   ];
   return (
@@ -82,7 +85,7 @@ export default function AfterPlacingOrders() {
               </Paper>
             </Grid>
             <Grid item xs={12} md={6}>
-              <Card sx={{ maxHeight: "617px", overflow: "auto" }}>
+              <Card sx={{ maxHeight: "67.5vh", overflow: "auto" }}>
                 <CardContent>
                   <List>
                     {data.map((it, idx) => {

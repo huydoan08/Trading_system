@@ -26,9 +26,9 @@ export default function ItemLists({ item }) {
               xs: "12px", 
               sm: "16px", 
               md: "22px", 
-              lg: "26px", 
+              lg: "24px", 
             },
-            fontWeight: "700",
+            fontWeight: "500",
           },
         }}
         primary={item}

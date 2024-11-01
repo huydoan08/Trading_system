@@ -11,6 +11,7 @@ import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import SailingIcon from '@mui/icons-material/Sailing';
 import MoodIcon from '@mui/icons-material/Mood';
+import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 import SettingsAccessibilityIcon from '@mui/icons-material/SettingsAccessibility';
 import { AppProvider } from "@toolpad/core/AppProvider";
 import { DashboardLayout } from "@toolpad/core/DashboardLayout";
@@ -25,6 +26,7 @@ import CrowdPsychologyAnalysis from "./pages/CrowdPsychologyAnalysis";
 import PricingAnalysis from "./pages/PricingAnalysis";
 import PersonalFeelingsAnalysis from "./pages/PersonalFeelingsAnalysis";
 import Phylosophy from "./pages/Phylosophy";
+import CauseBigLosses from "./pages/CauseBigLosses";
 
 const NAVIGATION = [
   {
@@ -58,6 +60,11 @@ const NAVIGATION = [
         icon: <ArrowCircleDownIcon />,
       },
     ],
+  },
+  {
+    segment: "cause-big-losses",
+    title: "NGUYÊN NHÂN THUA LỖ LỚN",
+    icon: <ElectricBoltIcon />,
   },
   {
     segment: "important-trades",
@@ -100,7 +107,7 @@ const NAVIGATION = [
   },
   {
     segment: "phylosophy-of-life",
-    title: "GIAO DỊCH VS CUỘC ĐỜI",
+    title: "TRADING VS CUỘC SỐNG",
     icon: <MoodIcon />,
   },
 ];
@@ -135,6 +142,8 @@ function DemoPageContent({ pathname }) {
       return <BeforeEnterOrders />;
     case "/after-placing-order":
       return <AfterPlacingOrders />;
+    case "/cause-big-losses":
+      return <CauseBigLosses />;
     case "/technical-analysis":
       return <TechnicalAnalysis />;
     case "/crowd-psychology-analysis":
