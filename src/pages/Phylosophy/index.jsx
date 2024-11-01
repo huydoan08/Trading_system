@@ -26,7 +26,7 @@ const timeFrames = [
   },
   {
     label:
-      "Giống như cuộc sống, trading cũng bị chi phối bởi quy luật NHÂN- QUẢ, gieo sự tham lam => ắt sẽ gặt sự thua lỗ lớn, cháy tài khoản, lo lắng, bất an, gieo sự kỉ luật(quy tắc vào lệnh + quản lý vốn chặt) => Có được lợi nhuận đều đặn.",
+      "Giống như cuộc sống, trading cũng bị chi phối bởi quy luật NHÂN- QUẢ. Gieo sự tham lam => ắt sẽ gặt sự thua lỗ lớn, cháy tài khoản, lo lắng, bất an. Gieo sự kỉ luật(quy tắc vào lệnh + quản lý vốn chặt) => Có được lợi nhuận đều đặn. Gieo sự kiên trì, chăm chỉ => Gặt sự thành thạo PP.",
   },
 ];
 
@@ -41,7 +41,7 @@ const Phylosophy = () => {
         flexDirection="column"
         minHeight="100vh"
       >
-        <Header>TRADING NÓ GẮN LIỀN VỚI CUỘC SỐNG</Header>
+        <Header>CHÁNH NIỆM ỨNG DỤNG TRONG TRADING</Header>
         <Title>I.CÔNG VIỆC TRADING CÓ Ý NGHĨA GÌ </Title>
         <List>
           {timeFrames.map((it, idx) => {
