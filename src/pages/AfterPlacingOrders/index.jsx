@@ -70,7 +70,7 @@ export default function AfterPlacingOrders() {
       info: "Giao dịch theo xu hướng - Cắt vị thế lỗ nhanh chóng - Duy trì vị thế lời - Đừng đóng vị thế khi đang có khoản lợi nhuận lớn.",
     },
     {
-      info: "Khi mà RSI khung H2 cho thấy dấu hiệu của sự đảo chiều xu hướng, cần quyết đoán chốt lời, biết đủ thường vui.",
+      info: "Khi đã vào lệnh rồi thì không thoát lệnh khi mà chưa đạt target, lệnh chỉ được đóng khi và chỉ khi chạm SL.",
     },
   ];
   return (

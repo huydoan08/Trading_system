@@ -21,6 +21,15 @@ const criteria = [
   {
     label: "Không cố tình đi đoán đỉnh, đoán đáy → Chỉ follow theo xu hướng.",
   },
+  {
+    label: "Dấu hiệu ở khung thời gian lớn có độ chính xác sẽ khá là cao.",
+  },
+  {
+    label: "Ưu tiên vào lệnh với BTC, ETH với Altcoin thì chỉ vào lệnh với volumn nhỏ.",
+  },
+  {
+    label: "Trước khi quyết định vào lệnh cần có sự suy xét kĩ càng, khi đã vào lệnh thì có nghĩa là chấp nhận mất SL cho lệnh đó.",
+  },
 ];
 
 export default function BeforeEnterOrders() {

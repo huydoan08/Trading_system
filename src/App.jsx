@@ -80,22 +80,22 @@ const NAVIGATION = [
   },
   {
     segment: "technical-analysis",
-    title: "PHÂN TÍCH KĨ THUẬT",
+    title: "KĨ THUẬT",
     icon: <BarChartIcon />,
   },
   {
     segment: "crowd-psychology-analysis",
-    title: "PHÂN TÍCH TÂM LÝ ĐÁM ĐÔNG",
+    title: "TÂM LÝ ĐÁM ĐÔNG",
     icon: <GroupsIcon />,
   },
   {
     segment: "pricing-analysis",
-    title: "PHÂN TÍCH BÀI TOÁN LÀM GIÁ",
+    title: "BÀI TOÁN LÀM GIÁ",
     icon: <SailingIcon />,
   },
   {
     segment: "personal-feelings-analysis",
-    title: "PHÂN TÍCH CẢM XÚC BẢN THÂN",
+    title: "CẢM XÚC BẢN THÂN",
     icon: <SettingsAccessibilityIcon />,
   },
   {
@@ -107,7 +107,7 @@ const NAVIGATION = [
   },
   {
     segment: "phylosophy-of-life",
-    title: "TRADING VS CUỘC SỐNG",
+    title: "BÁT CHÁNH ĐẠO",
     icon: <MoodIcon />,
   },
 ];
