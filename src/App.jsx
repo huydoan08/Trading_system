@@ -95,7 +95,7 @@ const NAVIGATION = [
   },
   {
     segment: "personal-feelings-analysis",
-    title: "CẢM XÚC BẢN THÂN",
+    title: "QUẢN TRỊ CẢM XÚC",
     icon: <SettingsAccessibilityIcon />,
   },
   {
