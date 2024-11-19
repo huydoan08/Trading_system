@@ -12,7 +12,7 @@ const criteria = [
   },
   {
     label:
-    "Có xác nhận sóng hồi ở khung thời gian nhỏ hơn để Tối Ưu Đpiểm Vào Lệnh Đẹp. (Phải đợi có sự điều chỉnh, không tham gia sớm)",
+    "Có xác nhận sóng hồi ở khung thời gian nhỏ hơn để Tối Ưu Điểm Vào Lệnh Đẹp. (Phải đợi có sự điều chỉnh, không tham gia sớm)",
   },
   {
     label:

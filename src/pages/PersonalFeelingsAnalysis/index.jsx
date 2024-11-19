@@ -54,7 +54,7 @@ const timeFrames = [
   },
   {
     label:
-      "Dành thời gian quá nhiều vào việc theo dõi thị trường => Bài học rút ra là không nên dành thời gian quá nhiều mà hãy chỉ dảnh thời gian cho nó khoảng 1 đến 2 lần một ngày mỗi lần chỉ 5 - 10 phút và sau đó là dành thời gian cho những công việc khác, vì như vậy cuộc sống và công việc sẽ không bị giao dịch làm ảnh hưởng.",
+      "Dành thời gian quá nhiều vào việc theo dõi thị trường => Bài học rút ra là không nên dành thời gian quá nhiều mà hãy chỉ dành thời gian cho nó khoảng 1 đến 2 lần một ngày mỗi lần chỉ 5 - 10 phút và sau đó là dành thời gian cho những công việc khác, vì như vậy cuộc sống và công việc sẽ không bị giao dịch làm ảnh hưởng.",
   },
   {
     label:
