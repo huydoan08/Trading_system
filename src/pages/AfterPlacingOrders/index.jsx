@@ -72,6 +72,9 @@ export default function AfterPlacingOrders() {
     {
       info: "Khi đã vào lệnh rồi thì không thoát lệnh khi mà chưa đạt target, lệnh chỉ được đóng khi và chỉ khi chạm SL.",
     },
+    {
+      info: "Giao dịch ở khung thời gian nào thì sẽ đặt SL ở khung thời gian đó.",
+    },
   ];
   return (
     <Box>
