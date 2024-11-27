@@ -6,14 +6,14 @@ import ItemLists from "../../components/ItemLists";
 const timeFrames = [
   {
     label:
-      "Khi mà đám đông bị mất niềm tin vào thị trường, đó là lúc mà cá mập sẽ gom hàng.",
+      "Đám đông là nhóm người sẽ bay vào fomo khi mà thị trường bước giai giai đoạn tăng trưởng mạnh ",
   },
   {
     label:
-      "Khi mà đám đông còn hoài nghi thì cá mập sẽ bắt đầu đẩy giá đi lên.",
+      "Đám đông là nhóm người sẽ sợ hãi, chán nản rời khỏi thị trường khi mà giai đoạn thanh lọc và tích lũy trong một thời gian rất là dài.",
   },
   {
-    label: "Khi mà đám đông ai cũng bay vào thì lúc đó cá mập sẽ xả hàng.",
+    label: "Đám đông là nhóm người nhảy từ tài sản không tăng giá sang tài sản đang tăng giá mạnh vì sợ mất phần.",
   },
 ];
 
