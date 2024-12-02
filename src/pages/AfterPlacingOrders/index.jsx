@@ -49,37 +49,28 @@ export default function AfterPlacingOrders() {
   ];
   const data = [
     {
-      info: "Quản lý lệnh theo cấu trúc sóng, follow chiến lược giao dịch một cách tuyệt đối.",
+      info: "Quản lý lệnh giao dịch theo cấu trúc sóng, follow theo chiến lược giao dịch một cách tuyệt đối.",
     },
     {
-      info: "Tuyệt đối không nới lỏng SL ra xa, nếu nó quét SL thì hãy cứ để cho nó quét, ta sẽ tìm 1 cơ hội khác để vào lệnh, thị trường luôn đúng, mọi tình huống đều có thể xảy ra.",
+      info: "Giao dịch ở khung thời gian nào thì sẽ quản lý lệnh giao dịch ở khung thời gian đó.",
     },
     {
-      info: "Chỉ dời SL theo cấu trúc sóng về những vùng giá quan trọng.",
+      info: "Chỉ dời Stoploss theo cấu trúc sóng về những vùng giá quan trọng.",
     },
     {
-      info: "Không bị cảm xúc chi phối vào và chốt lời non.",
+      info: "Đối với một số coin lowcap thì quản lý lệnh bằng cách đặt chốt lời từng phần."
     },
     {
-      info: "Chỉ nhồi thêm lệnh khi giá đã đi một khoảng xa và có lợi nhuận, ko để bị hở sườn.",
+      info: "Tuyệt đối không để bị cảm xúc chi phối vào và đóng lệnh bằng tay, cần phải kỉ luật theo systems một cách tuyệt đối.",
     },
     {
-      info: "Tiền kiếm được trong lúc chờ đợi, chứ không phải là liên tục vào lệnh.",
-    },
-    {
-      info: "Giao dịch theo xu hướng - Cắt vị thế lỗ nhanh chóng - Duy trì vị thế lời - Đừng đóng vị thế khi đang có khoản lợi nhuận lớn.",
-    },
-    {
-      info: "Khi đã vào lệnh rồi thì không thoát lệnh khi mà chưa đạt target, lệnh chỉ được đóng khi và chỉ khi chạm SL.",
-    },
-    {
-      info: "Giao dịch ở khung thời gian nào thì sẽ đặt SL ở khung thời gian đó.",
-    },
+      info: "Giao dịch theo xu hướng - Cắt vị thế lỗ nhanh chóng - Duy trì vị thế lời - Đừng vội đóng vị thế khi đang có khoản lợi nhuận lớn.",
+    }
   ];
   return (
     <Box>
       <Box sx={{ padding: 4 }}>
-        <Header>QUẢN LÝ LỆNH SAO CHO TỐI ƯU ?</Header>
+        <Header>CÁCH ĐỂ QUẢN LÝ MỘT LỆNH GIAO DỊCH</Header>
         <Box>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
