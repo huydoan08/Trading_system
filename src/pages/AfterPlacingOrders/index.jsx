@@ -90,7 +90,7 @@ export default function AfterPlacingOrders() {
                         >
                           <ItemLists item={it?.info} />
                         </ListItem>
-                      );
+                      )
                     })}
                   </List>
                 </CardContent>
