@@ -1,20 +1,13 @@
 import { Box, List, ListItem } from "@mui/material";
-import Header from "../../components/Header";
 import Title from "../../components/Title";
 import ItemLists from "../../components/ItemLists";
 
-const timeFrames = [
-  {
-    label:
-      "Đám đông là nhóm người sẽ bay vào fomo khi mà thị trường bước giai giai đoạn tăng trưởng mạnh ",
-  },
-  {
-    label:
-      "Đám đông là nhóm người sẽ sợ hãi, chán nản rời khỏi thị trường khi mà giai đoạn thanh lọc và tích lũy trong một thời gian rất là dài.",
-  },
-  {
-    label: "Đám đông là nhóm người nhảy từ tài sản không tăng giá sang tài sản đang tăng giá mạnh vì sợ mất phần.",
-  },
+// Phân tích tâm lý và hành vi của đám đông
+const list = [
+  "Đám đông là nhóm người sẽ bay vào fomo khi mà thị trường bước giai giai đoạn tăng trưởng mạnh.",
+  "Đám đông là nhóm người sẽ sợ hãi, chán nản rời khỏi thị trường khi mà giai đoạn thanh lọc và tích lũy trong một thời gian rất là dài.",
+  "Khi mà đám đông tham gia vào fomo quá nhiều thì khả năng cao tại vùng giá đó sẽ có sự điều chỉnh, nguyên tắc đám đông là nhóm sẽ mất tiền.",
+  "Khi mà đám đông chán nản rời bỏ thị trường thì lúc đó cá mập sẽ âm thầm gom hàng lại."
 ];
 
 const CrowdPsychologyAnalysis = () => {
@@ -27,14 +20,13 @@ const CrowdPsychologyAnalysis = () => {
       flexDirection="column"
       minHeight="100vh"
     >
-      <Header>PHÂN TÍCH TÂM LÝ ĐÁM ĐÔNG</Header>
       <Box textAlign={"left"}>
-        <Title>I. PHÂN TÍCH TÂM LÝ ĐÁM ĐÔNG</Title>
+        <Title>I. PHÂN TÍCH TÂM LÝ VÀ HÀNH VI CỦA ĐÁM ĐÔNG</Title>
         <List>
-          {timeFrames.map((it, idx) => {
+          {list.map((item, idx) => {
             return (
               <ListItem key={idx}>
-                <ItemLists item={it.label} />
+                <ItemLists item={item} />
               </ListItem>
             );
           })}

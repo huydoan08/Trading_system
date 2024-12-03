@@ -36,12 +36,12 @@ const NAVIGATION = [
   },
   {
     segment: "criteria",
-    title: "TIÊU CHÍ TRƯỚC KHI VÀO LỆNH",
+    title: "TIÊU CHÍ VÀO LỆNH",
     icon: <LayersIcon />,
   },
   {
-    segment: "after-placing-order",
-    title: "QUẢN LÝ SAU KHI VÀO LỆNH",
+    segment: "order-management",
+    title: "QUẢN LÝ LỆNH",
     icon: <TipsAndUpdatesIcon />,
   },
   {
@@ -68,7 +68,7 @@ const NAVIGATION = [
   },
   {
     segment: "important-trades",
-    title: "LƯU Ý QUAN TRỌNG",
+    title: "CÁC LƯU Ý QUAN TRỌNG",
     icon: <StarsIcon />,
   },
   {
@@ -80,7 +80,7 @@ const NAVIGATION = [
   },
   {
     segment: "technical-analysis",
-    title: "KĨ THUẬT",
+    title: "PHÂN TÍCH KĨ THUẬT",
     icon: <BarChartIcon />,
   },
   {
@@ -95,7 +95,7 @@ const NAVIGATION = [
   },
   {
     segment: "personal-feelings-analysis",
-    title: "QUẢN TRỊ CẢM XÚC",
+    title: "SAI LẦM TRONG QUÁ KHỨ",
     icon: <SettingsAccessibilityIcon />,
   },
   {
@@ -140,7 +140,7 @@ function DemoPageContent({ pathname }) {
       return <ImporttantNotes />;
     case "/criteria":
       return <BeforeEnterOrders />;
-    case "/after-placing-order":
+    case "/order-management":
       return <AfterPlacingOrders />;
     case "/cause-big-losses":
       return <CauseBigLosses />;

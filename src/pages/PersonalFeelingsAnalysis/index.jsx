@@ -1,29 +1,35 @@
 import { Box, List, ListItem } from "@mui/material";
-import Header from "../../components/Header";
 import Title from "../../components/Title";
 import ItemLists from "../../components/ItemLists";
 
-const timeFrames = [
+const list = [
   {
     label:
-      "Thiếu sự kiên nhẫn, nóng vội muốn tham gia sớm => Cần kiên nhẫn chờ đợi cơ hội đẹp thực sự xuất hiện để có xác suất chiến thắng cao.",
+      "Thiếu sự kiên nhẫn trong việc chờ đợi cơ hội đẹp thực sự xuất hiện => Cần kiên nhẫn chờ đợi cơ hội đẹp thực sự xuất hiện để có xác suất chiến thắng cao, một lệnh giao dịch cần phải đáp ứng đủ các hầu hết các tiêu chí.",
+  },
+  {
+    label: "Không tuân thủ làm theo hệ thống một cách tuyệt đối => Hệ thống giao dịch là hệ thống những nguyên tắc mà một nhà giao dịch cần phải 'kỷ luật tuân thủ' để mà có thể có được kết quả tốt."
   },
   {
     label:
-      "Nguyên nhân chính khiến cho tâm lý bị ảnh hưởng và đưa ra quyết định dựa vào cảm xúc là do theo biến động của thị trường quá nhiều => Cần hạn chế theo dõi lệnh giao dịch kiên nhẫn chờ đợi thị trường làm việc.",
+      "Theo dõi biến động của thị trường quá nhiều, theo dõi quá nhiều đồng coin => Khi đã vào lệnh xong thì việc cần làm là kiên nhẫn chờ đợi để thị trường làm việc.",
   },
   {
     label:
-      "Suy nghĩ thị trường tài chính là nơi dễ kiếm tiền, tư duy muốn làm giàu nhanh, tư duy tất tay vào 1 lệnh giao dịch => Để có thể kiếm được tiền một cách ổn định, lâu dài, bền vững thì cần phải tập trung vào việc phát triển bản thân, nâng cao kĩ năng giao dịch.",
+      "All-in tất tay vào 1 lệnh giao dịch => Để có thể kiếm được tiền một cách ổn định, bền vững trong dài hạn thì cần phải biết cách phân bổ vốn sao cho phù hợp.",
   },
   {
     label:
-      "Trao đổi, tranh luận với người nào đó không cùng bộ ngôn ngữ tư duy => Rất khó để có thể nói cho một ai đó hiểu khi mà họ không có cùng mindset, chưa có trải nghiệm, tốt hơn hết là hãy tập trung vào bản thân và chỉ đi chia sẻ cho ai đó họ thực sự cần nó.",
+      "Cảm giác tiếc nuối, chản nản, mất bình tĩnh, cay cú khi mà lệnh giao dịch bị chạm stoploss => Những gì đã mất thì không thể lấy lại được, Stoploss là một phần của cuộc chơi, là một điều không thể tránh khỏi trong giao dịch, điều quan trọng hơn là sau mỗi lần giao dịch thành công hay thất bại thì có rút ra được cho mình điều gì đó hay không.",
   },
   {
     label:
-      "Cảm xúc tiếc nuối, buồn chán, khó chịu, cay cú khi bị chạm Stoploss => Những gì đã mất thì không thể lấy lại được, Stoploss là một điều không thể tránh khỏi trong giao dịch,điều quan trọng hơn là sau mỗi lần giao dịch thành công hay thất bại thì có rút ra được cho mình điều gì đó hay không.",
+      "Trao đổi, tranh luận với những người mà không có cùng tư duy giao dịch và đầu tư => Rất khó để có thể nói cho một ai đó họ hiểu, khi mà không có cùng mindset trong giao dịch và đầu tư, chưa có đủ trải nghiệm, tốt hơn hết là hãy tập trung vào bản thân và chỉ đi chia sẻ cho ai đó họ thực sự cần nó.",
   },
+ 
+  {
+    label: "Đóng lệnh bằng tay khi mà lệnh đang chạy => Đây là hành động hoàn toàn dựa vào cảm xúc, không nên làm như vậy vì giao dịch theo cảm xúc thì chắc chắn là sẽ không mang lại kết quả tốt."
+  }
 ];
 
 const PersonalFeelingsAnalysis = () => {
@@ -37,12 +43,9 @@ const PersonalFeelingsAnalysis = () => {
         flexDirection="column"
         minHeight="100vh"
       >
-        <Header>
-          PHÂN TÍCH TÂM LÝ VÀ HÀNH VI SAI DẪN ĐẾN KẾT QUẢ KHÔNG ĐƯỢC TỐT
-        </Header>
-        <Title>I. PHÂN TÍCH NGUYÊN NHÂN VÀ GIẢI PHÁP</Title>
+        <Title>I. SAI LẦM ĐÃ GẶP PHẢI TRONG QUÁ KHỨ</Title>
         <List>
-          {timeFrames.map((it, idx) => {
+          {list.map((it, idx) => {
             return (
               <ListItem key={idx}>
                 <ItemLists item={it.label} />

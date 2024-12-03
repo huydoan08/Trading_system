@@ -2,33 +2,33 @@ import { Box, List, ListItem } from "@mui/material";
 import Title from "../../components/Title";
 import ItemLists from "../../components/ItemLists";
 
+// Các tiêu chí trước khi vào một lệnh giao dịch
 const criteria = [
   {
-    label:
-      "Có dấu hiệu hội tụ hoặc phân kì của RSI.",
+    label: "Có dấu hiệu hội tụ hoặc phân kì của RSI.",
   },
   {
-    label: "Có xác nhận tín hiệu Price Action. (Nến đảo chiều)",
+    label: "Có sự xác nhận đảo chiều của Price Action.",
   },
   {
-    label:
-    "Có xác nhận sóng hồi ở khung thời gian nhỏ hơn để Tối Ưu Điểm Vào Lệnh Đẹp. (Phải đợi có sự điều chỉnh, không tham gia sớm)",
+    label: "Có xác nhận sóng hồi ở khung thời gian nhỏ hơn.",
   },
   {
     label:
-      "Khung thời gian giao dịch nên Đồng Thuận với khung thời gian lớn hơn.",
+      "Chỉ giao dịch theo xu hướng của khung thời gian lớn.",
   },
   {
-    label: "Không cố tình đi đoán đỉnh, đoán đáy → Chỉ follow theo xu hướng.",
+    label: "Không cố tình đi đoán đỉnh, đoán đáy.",
   },
   {
-    label: "Dấu hiệu ở khung thời gian lớn có độ chính xác sẽ khá là cao.",
+    label: "Dấu hiệu ở khung thời gian lớn sẽ có độ chính xác khá cao.",
   },
   {
-    label: "Ưu tiên vào lệnh với BTC, ETH với Altcoin thì chỉ vào lệnh với volumn nhỏ.",
+    label: "Chỉ nên giao dịch BTC và một số coin topcap.",
   },
   {
-    label: "Trước khi quyết định vào lệnh cần có sự suy xét kĩ càng, khi đã vào lệnh thì có nghĩa là chấp nhận mất SL cho lệnh đó.",
+    label:
+      "Trước khi đưa ra một quyết định giao dịch cần suy xét kĩ lưỡng, thẩm định kĩ càng.",
   },
 ];
 
