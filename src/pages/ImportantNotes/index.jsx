@@ -14,6 +14,9 @@ export default function ImporttantNotes() {
       info: "Việc quan trọng nhất là KĨ NĂNG XỬ LÝ chứ không phải là dự đoán giá.",
     },
     {
+      info: "Khi mà người khác thua lỗ lớn, cháy tài khoản thì mình chỉ thiệt hại nhỏ thì đó là một thành công."
+    },
+    {
       info: "Bạn phải xây dựng cho mình một HỆ THỐNG GIAO DỊCH và BẠN LÀM THEO HỆ THỐNG ĐÓ một cách nhất quán.",
     },
     {
