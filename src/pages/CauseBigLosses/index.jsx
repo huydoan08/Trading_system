@@ -1,16 +1,17 @@
 import { Box, List, ListItem } from "@mui/material";
-import Header from "../../components/Header";
 import ItemLists from "../../components/ItemLists";
+import Title from "../../components/Title";
 
-const analysisLists = [
-  "Cái ngu số 1: Không đặt Stop Loss.",
-  "Cái ngu số 2: Có đặt Stop Loss nhưng sau đó kéo dài Stop loss ra dẫn đến việc cháy tài khoản.",
-  "Cái ngu số 3: Vào Vol quá lớn, chưa chạm điểm stoploss thì đã cháy sạch tài khoản.",
-  "Cái ngu số 4: Kết hợp 2 cái 'ngu' số 1 và số 2. Khi âm tài khoản lại không có Stop loss, dời Stop loss ra xa rồi còn nhồi lệnh âm và làm cho tài khoản cháy nhanh hơn.",
-  "Cái ngu số 5: Giao dịch loạn xạ , không có phương pháp rõ ràng, thua nhiều dẫn đến cháy tài khoản",
-  "Cái ngủ số 6: Giao dịch future Altcoin, Altcoin biến động rất mạnh nên rất khó để giao dịch future."
+// Những sai lầm nghiêm trọng dẫn đến việc giao dịch bị thua lỗ lớn, cháy tài khoản.
+const list = [
+  "Cái ngu số 1: Giao dịch mà không có đặt Stoploss.",
+  "Cái ngu số 2: Có đặt Stoploss nhưng sau đó kéo dài Stoploss ra xa.",
+  "Cái ngu số 3: Vào lệnh giao dịch với khối lượng quá lớn.",
+  "Cái ngu số 4: DCA làm cho khối lượng giao dịch lớn dần lên.",
+  "Cái ngu số 5: Giao dịch ở khung thời gian nhỏ dẫn đến bị quét Stoploss nhiều lần.",
+  "Cái ngu số 6: Giao dịch loạn xạ, không có phương pháp rõ ràng.",
+  "Cái ngu số 7: Giao dịch future coin lowcap."
 ];
-
 
 const CauseBigLosses = () => {
   return (
@@ -21,10 +22,10 @@ const CauseBigLosses = () => {
         flexDirection={"column"}
         justifyContent={"start"}
       >
-        <Header>NHỮNG NGUYÊN NHÂN DẪN ĐẾN VIỆC CHÁY TÀI KHOẢN TRONG TRADING</Header>
+        <Title>I. NHỮNG SAI LẦM NGHIÊM TRỌNG DẪN ĐẾN VIỆC GIAO DỊCH BỊ THUA LỖ LỚN, CHÁY TÀI KHOẢN</Title>
         <Box>
           <List>
-            {analysisLists.map((item, idx) => {
+            {list.map((item, idx) => {
               return (
                 <ListItem key={idx}>
                   <ItemLists item={item} />
