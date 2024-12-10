@@ -28,6 +28,9 @@ const criteria = [
     info:
       "Đối với các đồng meme coin thì chỉ nên tận dụng Spot để lướt sóng ngắn.",
   },
+  {
+    info: "Đối với trade lướt ngắn thì chỉ vào lệnh với số tiền xác định mất là không quá 1000$."
+  }
 ];
 
 export default function BeforeEnterOrders() {
