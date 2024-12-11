@@ -12,6 +12,9 @@ const list = [
       "Thiếu sự kiên nhẫn trong việc chờ đợi cơ hội đẹp thực sự xuất hiện => Cần kiên nhẫn chờ đợi cơ hội đẹp thực sự xuất hiện để có xác suất chiến thắng cao, một lệnh giao dịch cần phải đáp ứng đủ các hầu hết các tiêu chí.",
   },
   {
+    label: "Giao dịch buy sell, long shot loạn xạ không theo một chiến lược cụ thể => Cần có cho mình một chiến lược cụ thể trong từng giai đoạn của thị trường và follow theo nó một cách nhất quán."
+  },
+  {
     label:
       "Đóng lệnh trực tiếp bằng tay trong khi lệnh đó đang được chạy => Đó là một hành động rất vô minh, để cho cảm xúc dẫn dắt và chi phối, có thể là lần đó may mắn đúng, nhưng về dài hạn thì hành động đó sẽ không mang lại kết quả tốt được.",
   },

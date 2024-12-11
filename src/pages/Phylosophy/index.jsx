@@ -1,5 +1,4 @@
 import { Box, List, ListItem } from "@mui/material";
-import Header from "../../components/Header";
 import Title from "../../components/Title";
 import ItemLists from "../../components/ItemLists";
 
@@ -52,6 +51,13 @@ const list = [
     label:
       "Giống như cuộc sống, Trading cũng bị chi phối bởi quy luật NHÂN- QUẢ. Gieo sự tham lam thì ắt sẽ gặt sự thua lỗ lớn, cháy tài khoản, lo lắng, bất an. Gieo sự kỉ luật (quy tắc vào lệnh + quản lý vốn chặt) => Có được lợi nhuận đều đặn. Gieo sự kiên trì, chăm chỉ => Gặt sự thành thạo PP.",
   },
+  {
+    label:
+      "Con đường trading và đầu tư là một hành trình dài học tập cả đời và luôn đầy rẫy những khó khăn mất mát đang đón chờ phía trước, nhưng cái gì cũng có cái giá phải trả cả thôi, muốn cuộc sống an nhàn không áp lực thì chỉ có đi làm thuê cho người khác cả đời, nhưng muốn cuộc sống tự do thì phải khởi nghiệp và đầu tư.",
+  },
+  {
+    label: "Trong đầu tư thì tốt nhất là hãy cứ yên lặng mà làm."
+  }
 ];
 
 const Phylosophy = () => {
