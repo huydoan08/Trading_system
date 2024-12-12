@@ -31,6 +31,9 @@ export default function ImporttantNotes() {
     {
       info: "Kĩ năng cần thời gian mới có thể thật sự thành thạo, cơ hội có rất nhiều và khi kĩ năng đã tốt thì cơ hội đến là tiền sẽ về.",
     },
+    {
+      info: "Thị trường crypto là một thị trường còn rất hoang sơ, và tăng trưởng rất nhanh, đây đích thị là một cơ hội lớn cho những ai biết nắm bắt."
+    }
   ];
   return (
     <Box
