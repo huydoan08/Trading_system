@@ -2,38 +2,33 @@ import { Box, List, ListItem } from "@mui/material";
 import Header from "../../components/Header";
 import ItemLists from "../../components/ItemLists";
 
+// Những lưu ý quan trọng
 export default function ImporttantNotes() {
   const data = [
     {
       info: "Chúng ta phải thừa nhận rằng thị trường này là một thị trường làm giá và chúng ta chỉ follow theo dựa vào những dấu hiệu.",
     },
     {
-      info: "Những dấu hiệu thì luôn có tính xác suất, không chắc chắn một điều gì cả.",
+      info: "Những dấu hiệu thì luôn luôn chỉ mang tính xác suất, không chắc chắn một điều gì cả, đó là sự vô thường của thị trường.",
     },
     {
-      info: "Việc quan trọng nhất là KĨ NĂNG XỬ LÝ chứ không phải là dự đoán giá.",
+      info: "Việc quan trọng nhất là phải có kĩ năng xử lý và phản ứng kịp thời tại những thời điểm quan trọng, chứ không phải chỉ tập trung vào việc đi dự đoán giá.",
     },
     {
-      info: "Khi mà người khác thua lỗ lớn, cháy tài khoản thì mình chỉ thiệt hại nhỏ thì đó là một thành công."
+      info: "Khi mà người khác thua lỗ lớn, cháy tài khoản thì mình chỉ thiệt hại nhỏ thì đó là một thành công.",
     },
     {
-      info: "Bạn phải xây dựng cho mình một HỆ THỐNG GIAO DỊCH và BẠN LÀM THEO HỆ THỐNG ĐÓ một cách nhất quán.",
+      info: "Khi mà đám đông bên ngoài bị thanh lý lệnh và cháy tài khoản, sợ hãi mất niềm tin thì đó là lúc cơ hội thực sự đến với bạn.",
     },
     {
-      info: "Cần một thời gian dài mới có thể hiểu được, mới có thể thành thạo được một cái NGHỀ.",
-    },
-    {
-      info: "Kiên nhẫn và thành thục phương pháp, bạn sẽ nhận được phần thưởng xứng đáng.",
+      info: "Khi mà đám đông đang rất lạc quan, rất chủ quan thì lúc đó mình nên biết sợ hãi mà rút lui.",
     },
     {
       info: "Đứng ngoài chờ đợi khi cơ hội chưa thực sự rõ ràng cũng đã là thành công.",
     },
     {
-      info: "Kĩ năng cần thời gian mới có thể thật sự thành thạo, cơ hội có rất nhiều và khi kĩ năng đã tốt thì cơ hội đến là tiền sẽ về.",
+      info: "Hãy làm những thứ đơn giản trước và làm cho thật giỏi, tinh hoa của sự phức tạp chính là sự đơn giản.",
     },
-    {
-      info: "Thị trường crypto là một thị trường còn rất hoang sơ, và tăng trưởng rất nhanh, đây đích thị là một cơ hội lớn cho những ai biết nắm bắt."
-    }
   ];
   return (
     <Box
