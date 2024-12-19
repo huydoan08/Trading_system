@@ -11,15 +11,14 @@ const criteria = [
     info: "Có sự xác nhận kill Long/Shot tại khung H1, H4.",
   },
   {
-    info:
-      "Khi mà giá quay về test tại các vùng hỗ trợ hoặc kháng cự quan trọng.",
+    info: "Khi mà giá quay về test tại các vùng hỗ trợ hoặc kháng cự quan trọng.",
   },
   {
-    info: "Stoploss cho mỗi một lệnh giao dịch nên cố gắng khống chế ở mức dưới 1000$."
+    info: "Stoploss cho mỗi một lệnh giao dịch nên cố gắng khống chế ở mức dưới 1000$.",
   },
   {
-    info: "Tính toán trước rủi ro, mức thưởng và xác suất chiến thắng đối với lệnh giao dịch đó."
-  }
+    info: "Tính toán trước rủi ro, mức thưởng và xác suất chiến thắng đối với lệnh giao dịch đó.",
+  },
 ];
 
 export default function BeforeEnterOrders() {
