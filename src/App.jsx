@@ -11,6 +11,7 @@ import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import SailingIcon from '@mui/icons-material/Sailing';
 import MoodIcon from '@mui/icons-material/Mood';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 import SettingsAccessibilityIcon from '@mui/icons-material/SettingsAccessibility';
 import { AppProvider } from "@toolpad/core/AppProvider";
@@ -19,7 +20,6 @@ import TradingSystem from "./pages/TradingSystem";
 import BigWinTrades from "./pages/BigWinTrades";
 import BigLossTrades from "./pages/BigLossTrades";
 import ImporttantNotes from "./pages/ImportantNotes";
-import BeforeEnterOrders from "./pages/CriteriaBeforeEnteringOrders";
 import AfterPlacingOrders from "./pages/AfterPlacingOrders";
 import TechnicalAnalysis from "./pages/TechnicalAnalysis";
 import CrowdPsychologyAnalysis from "./pages/CrowdPsychologyAnalysis";
@@ -27,6 +27,8 @@ import PricingAnalysis from "./pages/PricingAnalysis";
 import PersonalFeelingsAnalysis from "./pages/PersonalFeelingsAnalysis";
 import Phylosophy from "./pages/Phylosophy";
 import CauseBigLosses from "./pages/CauseBigLosses";
+import Blogs from "./pages/Blogs";
+import BeforeEnterOrders from "./pages/BeforeOrders";
 
 const NAVIGATION = [
   {
@@ -110,6 +112,11 @@ const NAVIGATION = [
     title: "BÁT CHÁNH ĐẠO",
     icon: <MoodIcon />,
   },
+  {
+    segment: "blogs",
+    title: "Blogs",
+    icon: <AutoStoriesIcon />,
+  },
 ];
 
 const demoTheme = createTheme({
@@ -154,6 +161,8 @@ function DemoPageContent({ pathname }) {
       return <PersonalFeelingsAnalysis />;
     case "/phylosophy-of-life":
       return <Phylosophy />;
+    case "/blogs":
+      return <Blogs />;
     default:
       return <TradingSystem />;
   }
