@@ -22,7 +22,7 @@ const criteria = [
   },
   {
     info:
-      "Danh mục đầu tư chỉ nên tập trung vào BTC, ETH, SOL, BNB, LINK, SUI, XRP.",
+      "Danh mục đầu tư chỉ nên tập trung vào BTC, ETH, BNB ,SOL, LINK, SUI, XRP, XR.",
   },
   {
     info:

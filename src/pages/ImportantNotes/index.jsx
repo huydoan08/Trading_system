@@ -29,6 +29,9 @@ export default function ImporttantNotes() {
     {
       info: "Hãy làm những thứ đơn giản trước và làm cho thật giỏi, tinh hoa của sự phức tạp chính là sự đơn giản.",
     },
+    {
+      info: "Trong đầu tư phải có khả năng đưa ra quyết định độc lập, phải tin tưởng, và sẵn sàng chịu trách nhiệm với các quyết định của chính bản thân mình."
+    }
   ];
   return (
     <Box
