@@ -14,7 +14,10 @@ const criteria = [
     info: "Khi mà giá quay về test tại các vùng hỗ trợ hoặc kháng cự quan trọng.",
   },
   {
-    info: "Stoploss cho mỗi một lệnh giao dịch nên cố gắng khống chế ở mức dưới 1000$.",
+    info: "Short Altcoin khi mà giá đã tăng mạnh khoảng 3 nhịp.",
+  },
+  {
+    info: "Stoploss cho mỗi một lệnh giao dịch nên cố gắng khống chế ở mức dưới 100$.",
   },
   {
     info: "Tính toán trước rủi ro, mức thưởng và xác suất chiến thắng đối với lệnh giao dịch đó.",
