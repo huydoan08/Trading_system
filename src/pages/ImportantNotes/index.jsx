@@ -30,7 +30,13 @@ export default function ImporttantNotes() {
       info: "Hãy làm những thứ đơn giản trước và làm cho thật giỏi, tinh hoa của sự phức tạp chính là sự đơn giản.",
     },
     {
-      info: "Trong đầu tư phải có khả năng đưa ra quyết định độc lập, phải tin tưởng, và sẵn sàng chịu trách nhiệm với các quyết định của chính bản thân mình."
+      info: "Trong đầu tư phải có khả năng đưa ra quyết định độc lập, phải tin tưởng, và sẵn sàng chịu trách nhiệm với các quyết định của chính bản thân mình.",
+    },
+    {
+      info: "Trong giao dịch và đầu tư mà vẫn còn nhìn vào mấy cây nến tăng giảm, nhìn vào số tiền trong tài khoản nhảy múa, nhìn vào những biến động ngắn hạn của thị trường và để cho cảm xúc chi phối vào thì cuộc đời sẽ còn mãi mãi khổ.",
+    },
+    {
+      info: "Nếu mà muốn thắng thì đừng sợ thua, muốn ăn sóng dài thì phải chấp nhận bỏ qua sóng ngắn, cái gì nó cũng có cái giá của nó. "
     }
   ];
   return (

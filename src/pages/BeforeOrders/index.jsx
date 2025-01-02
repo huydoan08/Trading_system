@@ -5,19 +5,10 @@ import ItemLists from "../../components/ItemLists";
 // Các tiêu chí trước khi vào một lệnh giao dịch
 const criteria = [
   {
-    info: "Có tín hiệu xác nhận của RSI.",
+    info: "Có dấu hiệu tích lũy của RSI khung H4.",
   },
   {
-    info: "Có sự xác nhận kill Long/Shot tại khung H1, H4.",
-  },
-  {
-    info: "Khi mà giá quay về test tại các vùng hỗ trợ hoặc kháng cự quan trọng.",
-  },
-  {
-    info: "Short Altcoin khi mà giá đã tăng mạnh khoảng 3 nhịp.",
-  },
-  {
-    info: "Stoploss cho mỗi một lệnh giao dịch nên cố gắng khống chế ở mức dưới 100$.",
+    info: "Chỉ có giao dịch SPOT BTC."
   },
   {
     info: "Tính toán trước rủi ro, mức thưởng và xác suất chiến thắng đối với lệnh giao dịch đó.",

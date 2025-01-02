@@ -49,19 +49,10 @@ export default function AfterPlacingOrders() {
   ];
   const data = [
     {
-      info: "Quản lý lệnh giao dịch theo cấu trúc sóng, follow theo chiến lược giao dịch một cách tuyệt đối.",
+      info: "Quản lý lệnh giao dịch theo cấu trúc sóng.",
     },
     {
-      info: "Giao dịch ở khung thời gian nào thì sẽ quản lý lệnh giao dịch ở khung thời gian đó.",
-    },
-    {
-      info: "Chỉ dời Stoploss theo cấu trúc sóng về những vùng giá quan trọng.",
-    },
-    {
-      info: "Đối với một số coin lowcap thì quản lý lệnh bằng cách đặt chốt lời từng phần."
-    },
-    {
-      info: "Tuyệt đối không để bị cảm xúc chi phối vào và đóng lệnh bằng tay, cần phải kỉ luật theo systems một cách tuyệt đối.",
+      info: "Bình tĩnh quan sát thị trường và cảm nhận thị trường, để đưa ra những hành động kịp thời tại những thời điểm quan trọng."
     },
     {
       info: "Giao dịch theo xu hướng - Đóng vị thế lỗ nhanh chóng khi thấy dấu hiệu bất ổn - Duy trì vị thế lời - Đừng vội đóng vị thế khi đang có khoản lợi nhuận lớn.",
