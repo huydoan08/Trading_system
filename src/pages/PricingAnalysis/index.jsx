@@ -3,13 +3,12 @@ import Title from "../../components/Title";
 import ItemLists from "../../components/ItemLists";
 
 const list = [
-  "Gom hàng: Khi mà thị trường sideway ở vùng đáy trong một thời gian rất là dài, đám đông chán nản bán ra thì cá mập sẽ âm thầm gom hàng vào.",
-  "Bơm thử: Khi mà cá mập đã gom hàng xong thì sẽ bắt đầu đẩy giá một chút và sideway thêm để cho những người yếu tay bán ra nốt số coi cuối cùng.",
-  "Đẩy mạnh: Khi mà mọi thứ đã sẵn sàng, gom đủ số lượng, thì cá mập sẽ đẩy giá nên rất là mạnh trong thời gian ngắn dưới sự nghi ngờ của đám đông.",
-  "Bắt đầu phân phối: Khi này rất nhiều thông tin tích cực được tung ra, ai tham gia vào cũng kiếm được lợi nhuận ngay, lúc này giá sẽ vẫn tiếp tục tăng do sự đẩy giá của cá mập và fomo của đám đông, nhưng đây đã là vùng rất nguy hiểm rồi vì khi này thì cá mập sẽ âm thầm bán ra.",
-  "Suy yếu: Khi mà dòng tiền bên ngoài đã yếu, cá mập đã bán đủ số lượng, thì sẽ để cho thị trường rơi tự do.",
-  "Sẽ đến thời điểm nhóm Market Maker sẽ thao túng thị trường để thanh lọc bớt lệnh giao dịch future cũng như làm cho đám đông run sợ và bán ra, hiểu sâu được điều này thì hãy luôn tập trung và quản lý lệnh cho thật chặt, sẵn sàng cho mọi tình huống có thể xảy ra.",
-  "Nhóm Market maker họ rất giỏi trong việc dẫn dắt tâm lý người chơi, vẽ chart để dụ dỗ người chơi tham gia vào mua hoặc sợ hãi mà bán ra, nên hiểu được điều này thì tôi chỉ tập trung vào hệ thống giao dịch này mà thôi."
+  "Khi mà đám đông chán nản thì lúc đó cá mập âm thầm gom hàng.",
+  "Khi mà đám đông còn hoài nghi thì cá mập sẽ đẩy giá và đẩy giá từ từ trong sự nghi ngờ, nhưng sẽ có lúc đẩy giá rất mạnh khiến cho cá con bối rối không kịp trở tay.",
+  "Khi mà đám đông tham gia vào mua nhiều thì cá mập sẽ âm thầm chốt lời, âm thầm bán và giữ giá không để cho giá rơi, nhưng tuy nhiên sẽ để lại dấu vết thể hiện ở lực mua suy yếu.",
+  "Sau khi đã bán đủ số lượng thì cá mập sẽ đạp giá xuống rất nhanh để cho đám đông sợ hãi và bán tháo, và quét hết lệnh giao dịch của trader.",
+  "Sau một cú đạp giá rất mạnh và đạt được mục đích, thì cá mập sẽ dụ hàng để cho cá con bay vào mua, sau đó sẽ đạp tiếp 1-2 nhịp nữa cho cá con sợ, khi đó sẽ tiếp tục đẩy giá trong sự nghi ngờ.",
+  "=> Nguyên tắc là đám đông luôn là nhóm mất tiền, nhưng nếu hiểu thật sâu được và làm đúng systems thì sẽ lọt vào trong nhóm 1% những trader giỏi nhất và đi được dài hạn cùng với cả thị trường.",
 ];
 
 const PricingAnalysis = () => {

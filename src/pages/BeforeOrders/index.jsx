@@ -8,6 +8,9 @@ const criteria = [
     info: "Có dấu hiệu tích lũy của RSI khung H4.",
   },
   {
+    info: "Điểm Stoploss của người khác là điểm Entry của mình."
+  },
+  {
     info: "Chỉ giao dịch BTC vậy là đủ."
   },
   {

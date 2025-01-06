@@ -22,6 +22,7 @@ const analysisLists = [
   "Cần quan sát cẩn thận vùng hỗ trợ và kháng cự tại khung tuần và khi tới đó nên thoát ra trước rồi vào khung bé quan sát tiếp.",
   "80% hình thái sẽ là sideway ⇒ thời gian đứng ngoài chờ đợi sẽ là 80%.",
   "Tại vùng hỗ trợ kháng cự mà thấy có dấu hiệu phá qua thì cần đảo ngược vị thế chứ không cố gồng lệnh, không cố chấp.",
+  "Hỗ trợ kháng cự và vùng cản nơi mà tâm lý đám đông đang đặt niềm tin ở đó."
 ];
 
 

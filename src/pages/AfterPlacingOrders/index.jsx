@@ -53,8 +53,17 @@ export default function AfterPlacingOrders() {
       info: "Bình tĩnh quan sát quan sát các dấu hiệu của thị trường để phản ứng linh hoạt.",
     },
     {
-      info: "Chỉ giao dịch theo xu hướng - Duy trì vị thế lời - Đừng vội đóng vị thế khi mà lệnh đó đang chạy.",
+      info: "Chỉ giao dịch theo xu hướng chính.",
     },
+    {
+      info: "Hãy cứ để lệnh tiếp tục chạy khi có lợi nhuận và chưa chạm Stoploss."
+    },
+    {
+      info: "Tuyệt đối không DCA hay tác động vào lệnh khi mà lệnh đó đang âm."
+    },
+    {
+      info: "Tuyệt đối không mở chart ra soi nhiều để tránh bị bản ngã có cơ hội trỗi dậy."
+    }
   ];
   return (
     <Box sx={{ padding: 4 }}>

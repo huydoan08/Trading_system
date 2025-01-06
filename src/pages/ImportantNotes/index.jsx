@@ -12,7 +12,7 @@ export default function ImporttantNotes() {
       info: "Những dấu hiệu thì luôn luôn chỉ mang tính xác suất, không chắc chắn một điều gì cả, đó là sự vô thường của thị trường.",
     },
     {
-      info: "Việc quan trọng nhất là phải có kĩ năng xử lý và phản ứng kịp thời tại những thời điểm quan trọng, chứ không phải chỉ tập trung vào việc đi dự đoán giá.",
+      info: "Việc quan trọng nhất là phải có kĩ năng xử lý (systems + trực giác) và phản ứng kịp thời tại những thời điểm quan trọng, chứ không phải chỉ tập trung vào việc đi dự đoán giá.",
     },
     {
       info: "Khi mà người khác thua lỗ lớn, cháy tài khoản thì mình chỉ thiệt hại nhỏ thì đó là một thành công.",
@@ -30,13 +30,16 @@ export default function ImporttantNotes() {
       info: "Hãy làm những thứ đơn giản trước và làm cho thật giỏi, tinh hoa của sự phức tạp chính là sự đơn giản.",
     },
     {
-      info: "Trong đầu tư phải có khả năng đưa ra quyết định độc lập, phải tin tưởng, và sẵn sàng chịu trách nhiệm với các quyết định của chính bản thân mình.",
+      info: "Trong đầu tư phải có khả năng đưa ra quyết định độc lập, phải tin tưởng vào bản thân, và sẵn sàng chịu trách nhiệm với các quyết định của chính bản thân mình.",
     },
     {
-      info: "Trong giao dịch và đầu tư mà vẫn còn nhìn vào mấy cây nến tăng giảm, nhìn vào số tiền trong tài khoản nhảy múa, nhìn vào những biến động ngắn hạn của thị trường và để cho cảm xúc chi phối vào thì cuộc đời sẽ còn mãi mãi khổ.",
+      info: "Trong giao dịch và đầu tư mà vẫn còn nhìn vào mấy cây nến tăng giảm, nhìn vào khung H1, nhìn vào số tiền trong tài khoản nhảy múa, nhìn vào những biến động ngắn hạn của thị trường và để cho cảm xúc chi phối vào thì cuộc đời sẽ còn mãi mãi khổ.",
     },
     {
       info: "Nếu mà muốn thắng thì đừng sợ thua, muốn ăn sóng dài thì phải chấp nhận bỏ qua sóng ngắn, cái gì nó cũng có cái giá của nó. "
+    },
+    {
+      info: "Bản lĩnh thật sự của một trader thể hiện ở việc không để cho thị trường thao túng, chiến thắng được bản ngã của bản thân, tâm phải thật tĩnh lặng như mặt hồ, và có chiều sâu học tập."
     },
     {
       info: "Điều mà một trader thành công cần phải làm được đó là duy trì lợi nhuận ổn định trong một thời gian dài."
