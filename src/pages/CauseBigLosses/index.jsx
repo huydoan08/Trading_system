@@ -19,9 +19,8 @@ const list2 = [
   "Luôn luôn tuân thủ Stoploss trong giao dịch.",
   "Đặt Stoploss hợp lý và tính toán kĩ rủi ro trước khi vào lệnh.",
   "Không DCA trong giao dịch.",
-  "Giao dịch ở khung H4 trở lên.",
-  "Khi đã vào lệnh xong thì hãy để cho thị trường làm việc, chỉ kiểm tra lệnh giao dịch duy nhất ONE TIME PER DAY at 8 a.m.",
-  "Chỉ giao dịch một lệnh  duy nhất tại một thời điểm và trong suốt quá trình đó.",
+  "Giao dịch ở khung H4.",
+  "Khi đã vào lệnh xong thì hãy để cho thị trường làm việc, chỉ kiểm tra lệnh giao dịch sau ít nhất 4h kể từ thời điểm gần nhất.",
 ];
 
 const Section = ({ title, list }) => (
