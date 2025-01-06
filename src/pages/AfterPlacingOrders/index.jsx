@@ -5,9 +5,7 @@ import {
   Grid,
   List,
   ListItem,
-  ListItemText,
   Paper,
-  Typography,
 } from "@mui/material";
 import ImageGallery from "react-image-gallery";
 
@@ -49,46 +47,44 @@ export default function AfterPlacingOrders() {
   ];
   const data = [
     {
-      info: "Quản lý lệnh giao dịch theo cấu trúc sóng.",
+      info: "Quản lý lệnh giao dịch theo cấu trúc sóng H4, dời SL về những điểm quan trọng.",
     },
     {
-      info: "Bình tĩnh quan sát thị trường và cảm nhận thị trường, để đưa ra những hành động kịp thời tại những thời điểm quan trọng."
+      info: "Bình tĩnh quan sát quan sát các dấu hiệu của thị trường để phản ứng linh hoạt.",
     },
     {
-      info: "Giao dịch theo xu hướng - Đóng vị thế lỗ nhanh chóng khi thấy dấu hiệu bất ổn - Duy trì vị thế lời - Đừng vội đóng vị thế khi đang có khoản lợi nhuận lớn.",
-    }
+      info: "Chỉ giao dịch theo xu hướng - Duy trì vị thế lời - Đừng vội đóng vị thế khi mà lệnh đó đang chạy.",
+    },
   ];
   return (
-    <Box>
-      <Box sx={{ padding: 4 }}>
-        <Header>CÁCH ĐỂ QUẢN LÝ MỘT LỆNH GIAO DỊCH</Header>
-        <Box>
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={6}>
-              <Paper style={{ padding: 16 }}>
-                <ImageGallery items={images} />
-              </Paper>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <Card sx={{ maxHeight: "67.5vh", overflow: "auto" }}>
-                <CardContent>
-                  <List>
-                    {data.map((it, idx) => {
-                      return (
-                        <ListItem
-                          key={idx}
-                          sx={{ display: "flex", alignItems: "flex-start" }}
-                        >
-                          <ItemLists item={it?.info} />
-                        </ListItem>
-                      )
-                    })}
-                  </List>
-                </CardContent>
-              </Card>
-            </Grid>
+    <Box sx={{ padding: 4 }}>
+      <Header>CÁCH ĐỂ QUẢN LÝ MỘT LỆNH GIAO DỊCH</Header>
+      <Box>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={6}>
+            <Paper style={{ padding: 16 }}>
+              <ImageGallery items={images} />
+            </Paper>
           </Grid>
-        </Box>
+          <Grid item xs={12} md={6}>
+            <Card sx={{ maxHeight: "67.5vh", overflow: "auto" }}>
+              <CardContent>
+                <List>
+                  {data.map((it, idx) => {
+                    return (
+                      <ListItem
+                        key={idx}
+                        sx={{ display: "flex", alignItems: "flex-start" }}
+                      >
+                        <ItemLists item={it?.info} />
+                      </ListItem>
+                    );
+                  })}
+                </List>
+              </CardContent>
+            </Card>
+          </Grid>
+        </Grid>
       </Box>
     </Box>
   );

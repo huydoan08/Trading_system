@@ -37,6 +37,9 @@ export default function ImporttantNotes() {
     },
     {
       info: "Nếu mà muốn thắng thì đừng sợ thua, muốn ăn sóng dài thì phải chấp nhận bỏ qua sóng ngắn, cái gì nó cũng có cái giá của nó. "
+    },
+    {
+      info: "Điều mà một trader thành công cần phải làm được đó là duy trì lợi nhuận ổn định trong một thời gian dài."
     }
   ];
   return (

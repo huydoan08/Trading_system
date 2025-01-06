@@ -8,11 +8,11 @@ const criteria = [
     info: "Có dấu hiệu tích lũy của RSI khung H4.",
   },
   {
-    info: "Chỉ có giao dịch SPOT BTC."
+    info: "Chỉ giao dịch BTC vậy là đủ."
   },
   {
-    info: "Tính toán trước rủi ro, mức thưởng và xác suất chiến thắng đối với lệnh giao dịch đó.",
-  },
+    info: "Tính toán thật kĩ trước khoản rủi ro có thể chấp nhận được."
+  }
 ];
 
 export default function BeforeEnterOrders() {
