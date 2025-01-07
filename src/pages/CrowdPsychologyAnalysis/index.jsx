@@ -4,8 +4,10 @@ import ItemLists from "../../components/ItemLists";
 
 // Phân tích tâm lý và hành vi của đám đông
 const list = [
-  "Đám đông sẽ tham lam khi mà nhìn thấy cơ hội rõ ràng, khi đó là lúc mà tôi biết đủ và thoát lệnh, con sóng đó có thể tăng tiếp nhưng tôi ý thức được con sóng đó không thuộc về mình.",
-  "Đám đông sẽ sợ hãi khi mà Market Maker thao túng đạp giá xuống, khi đó đám đông sẽ sợ hãi và bán ra cũng như lệnh future bị thanh lý khá nhiều, khi đó là cơ hội để tôi cân nhắc vào lệnh.",
+  "Đám đông sẽ tham lam mua vào khi mà thấy người khác dễ dàng kiếm được lợi nhuận.",
+  "Đám đông sẽ sợ hãi rời đi khi mà thị trường có sự điều chỉnh giảm mạnh.",
+  "Đám đông luôn là nhóm mất tiền cho thị trường.",
+  "Khi mà bản thân không nhìn ra ai là nhóm người mất tiền thì coi chừng chính mình đang nằm trong đám đông mất tiền đó."
 ];
 
 const CrowdPsychologyAnalysis = () => {

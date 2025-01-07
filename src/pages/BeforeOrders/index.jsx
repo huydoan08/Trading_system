@@ -5,13 +5,19 @@ import ItemLists from "../../components/ItemLists";
 // Các tiêu chí trước khi vào một lệnh giao dịch
 const criteria = [
   {
-    info: "Có dấu hiệu tích lũy của RSI khung H4.",
+    info: "Có dấu hiệu tích lũy của RSI khung H4 thể hiện ở RSI tạo đáy sau cao dần.",
+  },
+  {
+    info: "RSI khung D1 có sự bó hẹp lại và đi gần hết hành trình của sự điều chỉnh thì đó là một cơ hội lớn.",
+  },
+  {
+    info: "Trước đó có RSI khung H4, D1 vượt ra khỏi vùng 80 thì khả năng rất cao sẽ có một nhịp sóng hồi."
   },
   {
     info: "Điểm Stoploss của người khác là điểm Entry của mình."
   },
   {
-    info: "Chỉ giao dịch BTC vậy là đủ."
+    info: "Chỉ giao dịch BTC và theo xu hướng chính vậy là đủ."
   },
   {
     info: "Tính toán thật kĩ trước khoản rủi ro có thể chấp nhận được."

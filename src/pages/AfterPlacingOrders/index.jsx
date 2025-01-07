@@ -47,22 +47,22 @@ export default function AfterPlacingOrders() {
   ];
   const data = [
     {
-      info: "Quản lý lệnh giao dịch theo cấu trúc sóng H4, dời SL về những điểm quan trọng.",
+      info: "Tuyệt đối không mở chart ra xem quá nhiều để tránh việc bản ngã có cơ hội trỗi dậy."
     },
     {
-      info: "Bình tĩnh quan sát quan sát các dấu hiệu của thị trường để phản ứng linh hoạt.",
+      info: "Quản lý lệnh giao dịch theo cấu trúc sóng H4, D1 dời SL về những vùng giá quan trọng.",
     },
     {
-      info: "Chỉ giao dịch theo xu hướng chính.",
+      info: "Bình tĩnh quan sát các dấu hiệu của thị trường và cảm nhận bằng trực giác để có thể đưa ra quyết định đúng.",
     },
     {
-      info: "Hãy cứ để lệnh tiếp tục chạy khi có lợi nhuận và chưa chạm Stoploss."
+      info: "Chỉ giao dịch theo xu hướng chính của khung 1W, 1M.",
     },
     {
-      info: "Tuyệt đối không DCA hay tác động vào lệnh khi mà lệnh đó đang âm."
+      info: "Hãy cứ để lệnh giao dịch tiếp tục chạy khi đã lợi nhuận, đừng để cảm xúc chi phối vào và chốt lời non."
     },
     {
-      info: "Tuyệt đối không mở chart ra soi nhiều để tránh bị bản ngã có cơ hội trỗi dậy."
+      info: "Tuyệt đối không DCA âm, nhồi lệnh âm."
     }
   ];
   return (

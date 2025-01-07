@@ -3,12 +3,13 @@ import Title from "../../components/Title";
 import ItemLists from "../../components/ItemLists";
 
 const list = [
-  "Khi mà đám đông chán nản thì lúc đó cá mập âm thầm gom hàng.",
-  "Khi mà đám đông còn hoài nghi thì cá mập sẽ đẩy giá và đẩy giá từ từ trong sự nghi ngờ, nhưng sẽ có lúc đẩy giá rất mạnh khiến cho cá con bối rối không kịp trở tay.",
-  "Khi mà đám đông tham gia vào mua nhiều thì cá mập sẽ âm thầm chốt lời, âm thầm bán và giữ giá không để cho giá rơi, nhưng tuy nhiên sẽ để lại dấu vết thể hiện ở lực mua suy yếu.",
-  "Sau khi đã bán đủ số lượng thì cá mập sẽ đạp giá xuống rất nhanh để cho đám đông sợ hãi và bán tháo, và quét hết lệnh giao dịch của trader.",
-  "Sau một cú đạp giá rất mạnh và đạt được mục đích, thì cá mập sẽ dụ hàng để cho cá con bay vào mua, sau đó sẽ đạp tiếp 1-2 nhịp nữa cho cá con sợ, khi đó sẽ tiếp tục đẩy giá trong sự nghi ngờ.",
-  "=> Nguyên tắc là đám đông luôn là nhóm mất tiền, nhưng nếu hiểu thật sâu được và làm đúng systems thì sẽ lọt vào trong nhóm 1% những trader giỏi nhất và đi được dài hạn cùng với cả thị trường.",
+  "Cá mập là nhóm dẫn dắt thị trường để cho đám đông sẽ hành động theo kế hoạch của họ.",
+  "Cá mập sẽ âm thầm gom hàng khi mà đám đông họ chán nản rời bỏ thị trường.",
+  "Cá mập sẽ âm thầm bán ra khi mà đám đông đổ xô vào mua.",
+  "Cá mập tạo ra nhiều Altcoin để dụ cho đám đông nhảy tới nhảy lui và cuối cùng là mất tiền.",
+  "Cá mập cho người chơi giao dịch 2 chiều để họ bị loạn đao pháp dẫn tới bị tẩu hỏa nhập ma.",
+  "Cá mập cho người chơi sử dụng đòn bẩy lớn để khi mà thị trường biến động mạnh thì số tiền rất khủng sẽ bị thanh lý.",
+  "Cá mập họ có tham vọng lớn nên sẽ đẩy giá lên khá cao để kiếm lợi nhuận khủng, nhưng tuy nhiên trên hành trình đó thì cá cũng sẽ có những pha rũ hàng rất mạnh.",
 ];
 
 const PricingAnalysis = () => {
@@ -22,7 +23,7 @@ const PricingAnalysis = () => {
         flexDirection="column"
         minHeight="100vh"
       >
-        <Title>I. CÁCH MÀ CÁ MẬP LÀM GIÁ THAO TÚNG THỊ TRƯỜNG</Title>
+        <Title>I. BÀI TOÁN LÀM GIÁ CỦA CÁ MẬP</Title>
         <List>
           {list.map((it, idx) => {
             return (
