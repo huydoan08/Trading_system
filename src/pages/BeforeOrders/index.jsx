@@ -5,7 +5,16 @@ import ItemLists from "../../components/ItemLists";
 // Các tiêu chí trước khi vào một lệnh giao dịch
 const criteria = [
   {
+    info: "Có chiến lược giao dịch phù hợp tùy vào từng giai đoạn của thị trường."
+  },
+  {
+    info: "Kiên nhẫn chờ đợi các dấu hiệu đã đáp ứng tiêu chí vào lệnh của chiến lược đã đề ra trước đó.",
+  },
+  {
     info: "Có dấu hiệu tích lũy của RSI khung H4 thể hiện ở RSI tạo đáy sau cao dần.",
+  },
+  {
+    info: "Có dấu hiệu lực bán suy yếu của RSI khung H4 thể hiện ở RSI đã đi 1 quãng khá xa, đã bó hẹp lại và chưa có vượt ra ngoài vùng 20.",
   },
   {
     info: "RSI khung D1 có sự bó hẹp lại và đi gần hết hành trình của sự điều chỉnh thì đó là một cơ hội lớn.",
