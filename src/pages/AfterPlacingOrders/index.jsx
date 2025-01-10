@@ -66,6 +66,15 @@ export default function AfterPlacingOrders() {
     },
     {
       info: "Chỉ giao dịch theo xu hướng chính của khung 1W, 1M.",
+    },
+    {
+      info: "Cắt out ra ngoài 1 phần lợi nhuận sau mỗi lệnh giao dịch thành công để tận hưởng cảm giác chiến thắng.",
+    },
+    {
+      info: "Ghi chép lại nhật kí giao dịch, đúc kết lại kinh nghiệm sau mỗi lệnh giao dịch để không mắc phải sai lầm cho những lần sau.",
+    },
+    {
+      info: "Nhanh chóng quên đi quá khứ giao dịch, chỉ giữ lại cho mình bài học, và setup một cuộc chơi mới."
     }
   ];
   return (
