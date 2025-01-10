@@ -53,7 +53,16 @@ export default function AfterPlacingOrders() {
       info: "Quản lý lệnh giao dịch theo cấu trúc sóng H4 dời SL về những vùng giá quan trọng nếu như lực mua tham gia mạnh.",
     },
     {
+      info: "Không để cảm xúc chi phối vào và chốt lời non, tuy nhiên có thể đặt lệnh TP để chốt lời từng phần."
+    },
+    {
+      info: "Khi thấy có dấu hiệu bất ổn thì nên nhanh chóng thoát lệnh.",
+    },
+    {
       info: "Bình tĩnh quan sát các dấu hiệu của thị trường và cảm nhận bằng trực giác để có thể đưa ra quyết định đúng.",
+    },
+    {
+      info: "Không để cảm xúc tham lam, sợ hãi chi phối vào các quyết định, mà chỉ đưa ra quyết định dựa vào các dấu hiệu."
     },
     {
       info: "Chỉ giao dịch theo xu hướng chính của khung 1W, 1M.",
