@@ -68,6 +68,9 @@ export default function AfterPlacingOrders() {
       info: "Chỉ giao dịch theo xu hướng chính của khung 1W, 1M.",
     },
     {
+      info: "Không quá kì vọng, không đoán, không ảo tưởng, không nghe theo KOL nào cả, chỉ tập trung vào hệ thống giao dịch, và nâng cao kĩ năng của bản thân."
+    },
+    {
       info: "Cắt out ra ngoài 1 phần lợi nhuận sau mỗi lệnh giao dịch thành công để tận hưởng cảm giác chiến thắng.",
     },
     {
