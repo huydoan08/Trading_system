@@ -10,10 +10,6 @@ import Header from "../../components/Header";
 const TradingSystem = () => {
   const images = [
     {
-      original: DB01,
-      thumbnail: DB01,
-    },
-    {
       original: DB02,
       thumbnail: DB02,
     },
@@ -29,6 +25,10 @@ const TradingSystem = () => {
       original: DB05,
       thumbnail: DB05,
     },
+    {
+      original: DB01,
+      thumbnail: DB01,
+    },
   ];
   return (
     <Box
@@ -41,7 +41,7 @@ const TradingSystem = () => {
       textAlign="center"
     >
       <Header>TRADING SYSTEMS - TRADE WHAT YOU SEE NOT WHAT YOU THINK</Header>
-      <Header color="#9f9f9f">( KIÊN NHẪN, QUYẾT ĐOÁN, KỈ LUẬT )</Header>
+      <Header color="#9f9f9f">( KIÊN NHẪN, TRỰC GIÁC, KỈ LUẬT )</Header>
       <Paper style={{ padding: 10 }}>
         <ImageGallery items={images} />
       </Paper>

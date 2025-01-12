@@ -11,10 +11,7 @@ const criteria = [
     info: "Kiên nhẫn quan sát các dấu hiệu của thị trường trên đồ thị giá và RSI.",
   },
   {
-    info: "Có dấu hiệu xác nhận của RSI khung H4.",
-  },
-  {
-    info: "Điểm Stoploss của người khác là điểm Entry của mình."
+    info: "Chỉ vào lệnh khi đáp ứng được các tiêu chí của hệ thống giao dịch.",
   },
   {
     info: "Chỉ giao dịch BTC và theo xu hướng chính vậy là đủ."

@@ -6,12 +6,9 @@ import GroupsIcon from '@mui/icons-material/Groups';
 import LayersIcon from "@mui/icons-material/Layers";
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 import StarsIcon from '@mui/icons-material/Stars';
-import HistoryToggleOffIcon from '@mui/icons-material/HistoryToggleOff';
-import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
-import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
+
 import SailingIcon from '@mui/icons-material/Sailing';
 import MoodIcon from '@mui/icons-material/Mood';
-import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 import SettingsAccessibilityIcon from '@mui/icons-material/SettingsAccessibility';
 import { AppProvider } from "@toolpad/core/AppProvider";
@@ -45,23 +42,6 @@ const NAVIGATION = [
     segment: "order-management",
     title: "QUẢN LÝ LỆNH",
     icon: <TipsAndUpdatesIcon />,
-  },
-  {
-    segment: "history",
-    title: "NHẬT KÍ GIAO DỊCH",
-    icon: <HistoryToggleOffIcon />,
-    children: [
-      {
-        segment: "big-win-trades",
-        title: "Lệnh thắng lớn",
-        icon: <ArrowCircleUpIcon />,
-      },
-      {
-        segment: "big-loss-trades",
-        title: "Lệnh thua lỗ lớn",
-        icon: <ArrowCircleDownIcon />,
-      },
-    ],
   },
   {
     segment: "cause-big-losses",
@@ -109,13 +89,8 @@ const NAVIGATION = [
   },
   {
     segment: "phylosophy-of-life",
-    title: "BÁT CHÁNH ĐẠO",
+    title: "GIỚI ĐỊNH TUỆ",
     icon: <MoodIcon />,
-  },
-  {
-    segment: "blogs",
-    title: "Blogs",
-    icon: <AutoStoriesIcon />,
   },
 ];
 
