@@ -3,12 +3,12 @@ import Header from "../../components/Header";
 import Title from "../../components/Title";
 import ItemLists from "../../components/ItemLists";
 
-
 const RSI = [
-  "Khi xuất hiện các dấu hiệu lực mua giảm, lực bán tăng (dấu hiệu của sự phân kì). Giá có khả năng đảo chiều từ tăng thành giảm",
-  "Khi xuất hiện các dấu hiệu lực bán giảm, lực mua tăng (dấu hiệu của sự hội tụ). Giá có khả năng đảo chiều từ giảm thành tăng",
-  "Khi RSI vượt ra vùng 80 => lực mua mạnh. Có khả năng giá sẽ tiếp tục tăng",
-  "Khi RSI xuống dưới vùng 20 => lực bán mạnh. Có khả năng giá sẽ tiếp tục rơi"
+  "RSI bó hẹp lại ( RSI tạo đáy sau bằng hoặc cao hơn đáy trước) và cắt lên trên đường TBN thì xác suất cao sẽ đảo chiều từ giảm sang tăng.",
+  "Nếu RSI chưa vượt quá vùng 30 thì đợi cho RSI cắt lên đường TBN là đã có thể vào lệnh",
+  "Nếu RSI vượt quá vùng 30 thì đợi cho RSI cắt lên đường TBC mới có thể vào lệnh được",
+  "Nếu RSI trước đó vượt ra khỏi vùng 80 thì có khả năng cao giá sẽ hồi nhẹ và tiếp tục tăng.",
+  "Nếu RSI vượt quá vùng 20 thì cần kiên nhẫn chờ đợi retest và tạo đáy RSI sau cao hơn đáy cũ.",
 ];
 const timeFrames = [
   "Khung thời gian phản ánh nhóm người tham gia vào thị trường là những nhóm người nào.",
@@ -22,9 +22,8 @@ const analysisLists = [
   "Cần quan sát cẩn thận vùng hỗ trợ và kháng cự tại khung tuần và khi tới đó nên thoát ra trước rồi vào khung bé quan sát tiếp.",
   "80% hình thái sẽ là sideway ⇒ thời gian đứng ngoài chờ đợi sẽ là 80%.",
   "Tại vùng hỗ trợ kháng cự mà thấy có dấu hiệu phá qua thì cần đảo ngược vị thế chứ không cố gồng lệnh, không cố chấp.",
-  "Hỗ trợ kháng cự và vùng cản nơi mà tâm lý đám đông đang đặt niềm tin ở đó."
+  "Hỗ trợ kháng cự và vùng cản nơi mà tâm lý đám đông đang đặt niềm tin ở đó.",
 ];
-
 
 const TechnicalAnalysis = () => {
   return (
