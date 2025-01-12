@@ -47,37 +47,34 @@ export default function AfterPlacingOrders() {
   ];
   const data = [
     {
-      info: "Chỉ giao dịch dựa vào các dấu hiệu của lực mua lực bán chứ không nhìn vào giá."
+      info: "Quản lý lệnh giao dịch theo cấu trúc sóng H4 dời SL về những vùng giá quan trọng.",
     },
     {
-      info: "Quản lý lệnh giao dịch theo cấu trúc sóng H4 dời SL về những vùng giá quan trọng nếu như lực mua tham gia mạnh.",
+      info: "Không để cảm xúc chi phối vào và chốt lời non."
     },
     {
-      info: "Không để cảm xúc chi phối vào và chốt lời non, tuy nhiên có thể đặt lệnh TP để chốt lời từng phần."
+      info: "Luôn luôn tuân thủ đặt Stoploss hợp lý.",
     },
     {
-      info: "Khi thấy có dấu hiệu bất ổn thì nên nhanh chóng thoát lệnh.",
+      info: "Khi lệnh đi ngược xu hướng cũng không đóng lệnh ngay và cũng không dời Stoploss ra xa."
     },
     {
-      info: "Bình tĩnh quan sát các dấu hiệu của thị trường và cảm nhận bằng trực giác để có thể đưa ra quyết định đúng.",
+      info: "Không cố gắng tìm cơ hội vào lệnh ngay sau khi chạm Stoploss."
     },
     {
-      info: "Không để cảm xúc tham lam, sợ hãi chi phối vào các quyết định, mà chỉ đưa ra quyết định dựa vào các dấu hiệu."
+      info: "Không kì vọng lệnh đó phải thắng và càng không sợ lệnh đó bị thua, tất cả cứ để cho hệ thống giao dịch đo lường, thời gian sẽ trả lời tất cả."
     },
     {
-      info: "Chỉ giao dịch theo xu hướng chính của khung 1W, 1M.",
-    },
-    {
-      info: "Không quá kì vọng, không đoán, không ảo tưởng, không nghe theo KOL nào cả, chỉ tập trung vào hệ thống giao dịch, và nâng cao kĩ năng của bản thân."
-    },
-    {
-      info: "Cắt out ra ngoài 1 phần lợi nhuận sau mỗi lệnh giao dịch thành công để tận hưởng cảm giác chiến thắng.",
+      info: "Cắt out ra ngoài 1 phần lợi nhuận nhỏ sau mỗi lệnh giao dịch thành công để tận hưởng cảm giác chiến thắng.",
     },
     {
       info: "Ghi chép lại nhật kí giao dịch, đúc kết lại kinh nghiệm sau mỗi lệnh giao dịch để không mắc phải sai lầm cho những lần sau.",
     },
     {
       info: "Nhanh chóng quên đi quá khứ giao dịch, chỉ giữ lại cho mình bài học, và setup một cuộc chơi mới."
+    },
+    {
+      info: "Liên tục học tập, backtest, đúc kết kinh nghiệm, hoàn thiện bản thân và giữ sự kỉ luật ở mức cao nhất."
     }
   ];
   return (
