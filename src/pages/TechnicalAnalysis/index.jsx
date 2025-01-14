@@ -17,12 +17,9 @@ const timeFrames = [
 ];
 
 const analysisLists = [
-  "Hỗ trợ, kháng cự là vùng giá mà khi giá chạm vào ⇒ giá sẽ CÓ KHẢ NĂNG quay đầu.",
-  "Hỗ trợ, kháng cự chỉ là một vùng tham khảo, có độ tin cậy cao khi đã test lại, và gần như chắc chắn khi đã hình thành cấu trúc sóng tại đó.",
-  "Cần quan sát cẩn thận vùng hỗ trợ và kháng cự tại khung tuần và khi tới đó nên thoát ra trước rồi vào khung bé quan sát tiếp.",
-  "80% hình thái sẽ là sideway ⇒ thời gian đứng ngoài chờ đợi sẽ là 80%.",
-  "Tại vùng hỗ trợ kháng cự mà thấy có dấu hiệu phá qua thì cần đảo ngược vị thế chứ không cố gồng lệnh, không cố chấp.",
-  "Hỗ trợ kháng cự và vùng cản nơi mà tâm lý đám đông đang đặt niềm tin ở đó.",
+  "Hỗ trợ hay kháng cự là một vùng cản nơi mà tâm lý đám đông đang đặt niềm tin ở đó => Tức là rất nhiều lệnh chờ đang được setup ở đó.",
+  "Tại vùng hỗ trợ kháng cự mà thấy có dấu hiệu phá qua, sau đó retest lại nhưng vẫn vượt ra khỏi vùng đó thì chứng tỏ đó không còn là một vùng cản nữa.",
+  "Thị trường hiện nay còn có cả margin future thế cho nên là nhóm MM sẽ vẽ ra các vùng kháng cự hỗ trợ CỨNG rồi sau đó dẫn dụ cho người chơi đặt Stoploss dưới vùng đó rất nhiều và nó quét qua."
 ];
 
 const TechnicalAnalysis = () => {
