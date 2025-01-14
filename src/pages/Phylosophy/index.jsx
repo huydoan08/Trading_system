@@ -10,7 +10,8 @@ const list = [
   "Trong cuộc sống và trong trading đều chịu sự chi phối của quy luật nhân quả.",
   "Tương lai phía trước và sự nghiệp trading luôn luôn có đầy rẫy những khó khăn, những mất mát, những cám dỗ đang chờ đón phía trước, bản thân phải luôn có sự chuẩn bị tốt nhất để đối mặt với chúng.",
   "Ai trong cuộc đời cũng sẽ phải mắc những sai lầm, nhưng đừng để lặp lại những sai lầm đó.",
-  "Hãy học cách xem nhẹ được và mất, sống một cuộc sống đơn giản nhưng chất lượng."
+  "Hãy học cách xem nhẹ được và mất, sống một cuộc sống đơn giản nhưng chất lượng.",
+  "Quan sát xunh quanh, soi người khác xem có học được gì từ họ hay không."
 ];
 
 const Phylosophy = () => {

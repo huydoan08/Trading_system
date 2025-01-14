@@ -6,8 +6,10 @@ import ItemLists from "../../components/ItemLists";
 const RSI = [
   "RSI bó hẹp lại ( RSI tạo đáy sau bằng hoặc cao hơn đáy trước) và cắt lên trên đường TBN thì xác suất cao sẽ đảo chiều từ giảm sang tăng.",
   "Nếu RSI chưa vượt quá vùng 30 thì đợi cho RSI cắt lên đường TBN là đã có thể vào lệnh",
-  "Nếu RSI vượt quá vùng 30 thì đợi cho RSI cắt lên đường TBC mới có thể vào lệnh được",
+  "RSI đi một quãng dài mỗi nhịp, thì chứng tỏ lực rất mạnh, có khả năng sẽ tiếp tục đi theo xu hướng đó",
   "Nếu RSI trước đó vượt ra khỏi vùng 80 thì có khả năng cao giá sẽ hồi nhẹ và tiếp tục tăng.",
+  "Nếu RSI chưa vượt ra khỏi vùng 80 và có dấu hiệu bó sát lại đường TBC thì coi chừng mà bỏ chạy.",
+  "Nếu RSI vượt quá vùng 30 thì đợi cho RSI cắt lên đường TBC mới có thể vào lệnh được",
   "Nếu RSI vượt quá vùng 20 thì cần kiên nhẫn chờ đợi retest và tạo đáy RSI sau cao hơn đáy cũ.",
 ];
 const timeFrames = [
