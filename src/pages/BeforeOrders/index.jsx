@@ -8,7 +8,7 @@ const criteria = [
   "Kiên nhẫn quan sát các dấu hiệu của thị trường trên đồ thị giá và RSI.",
   "Chỉ vào lệnh khi đáp ứng được các tiêu chí của hệ thống giao dịch.",
   "Chỉ giao dịch BTC và theo xu hướng chính vậy là đủ.",
-  "Mỗi một lệnh giao dịch sẽ có khối lượng cố định là 10,000$ và chia làm 3 lần mua theo tỉ lệ là 20 - 30 - 50.",
+  "Mỗi một lệnh giao dịch sẽ có khối lượng cố định là 5,000$ và chia làm 3 lần mua theo tỉ lệ là 1000$ - 2000$ - 2000$.",
   "Không cố tình đi đoán đỉnh và đoán đáy.",
   "Hiểu thật sâu cách mà cá mập thao túng thị trường thì sẽ dám vào lệnh bắt đỉnh, bắt đáy ở ở những vùng giá rất đẹp, và né được các cạm bẫy."
 ];
