@@ -15,6 +15,10 @@ import Image03 from "/image/03.png";
 import Image04 from "/image/04.png";
 import Image05 from "/image/05.png";
 import Image06 from "/image/06.png";
+import Image07 from "/image/07.png";
+import Image08 from "/image/08.png";
+import Image09 from "/image/09.png";
+import Image10 from "/image/10.png";
 import Header from "../../components/Header";
 import ItemLists from "../../components/ItemLists";
 
@@ -43,6 +47,22 @@ export default function AfterPlacingOrders() {
     {
       original: Image06,
       thumbnail: Image06,
+    },
+    {
+      original: Image07,
+      thumbnail: Image07,
+    },
+    {
+      original: Image08,
+      thumbnail: Image08,
+    },
+    {
+      original: Image09,
+      thumbnail: Image09,
+    },
+    {
+      original: Image10,
+      thumbnail: Image10,
     },
   ];
   const data = [
@@ -79,7 +99,7 @@ export default function AfterPlacingOrders() {
   ];
   return (
     <Box sx={{ padding: 4 }}>
-      <Header>CÁCH ĐỂ QUẢN LÝ MỘT LỆNH GIAO DỊCH</Header>
+      <Header></Header>
       <Box>
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
