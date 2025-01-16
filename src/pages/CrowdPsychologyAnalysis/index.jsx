@@ -6,8 +6,8 @@ import ItemLists from "../../components/ItemLists";
 const list = [
   "Đám đông sẽ tham lam mua vào khi mà thấy người khác dễ dàng kiếm được lợi nhuận.",
   "Đám đông sẽ sợ hãi rời đi khi mà thị trường có sự điều chỉnh giảm mạnh.",
-  "Đám đông luôn là nhóm mất tiền cho thị trường.",
-  "Khi mà bản thân không nhìn ra ai là nhóm người mất tiền thì coi chừng chính mình đang nằm trong đám đông mất tiền đó."
+  "Quy tắc trong game là đám đông luôn thua.",
+  "Khi mà nhìn xunh quanh ai ai cũng kiếm được tiền thì coi chừng chính mình sẽ là người mất tiền đấy nhé."
 ];
 
 const CrowdPsychologyAnalysis = () => {
