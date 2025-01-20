@@ -46,36 +46,16 @@ export default function AfterPlacingOrders() {
     },
   ];
   const data = [
-    {
-      info: "Quản lý lệnh giao dịch theo cấu trúc sóng H4 dời SL về những vùng giá quan trọng.",
-    },
-    {
-      info: "Không để cảm xúc chi phối vào và chốt lời non."
-    },
-    {
-      info: "Luôn luôn tuân thủ đặt Stoploss hợp lý.",
-    },
-    {
-      info: "Khi lệnh đi ngược xu hướng cũng không đóng lệnh ngay và cũng không dời Stoploss ra xa."
-    },
-    {
-      info: "Không cố gắng tìm cơ hội vào lệnh ngay sau khi chạm Stoploss."
-    },
-    {
-      info: "Không kì vọng lệnh đó phải thắng và càng không sợ lệnh đó bị thua, tất cả cứ để cho hệ thống giao dịch đo lường, thời gian sẽ trả lời tất cả."
-    },
-    {
-      info: "Cắt out ra ngoài 1 phần lợi nhuận nhỏ sau mỗi lệnh giao dịch thành công để tận hưởng cảm giác chiến thắng.",
-    },
-    {
-      info: "Ghi chép lại nhật kí giao dịch, đúc kết lại kinh nghiệm sau mỗi lệnh giao dịch để không mắc phải sai lầm cho những lần sau.",
-    },
-    {
-      info: "Nhanh chóng quên đi quá khứ giao dịch, chỉ giữ lại cho mình bài học, và setup một cuộc chơi mới."
-    },
-    {
-      info: "Liên tục học tập, backtest, đúc kết kinh nghiệm, hoàn thiện bản thân và giữ sự kỉ luật ở mức cao nhất."
-    }
+    "Quản lý lệnh giao dịch theo cấu trúc sóng H4 dời SL về những vùng giá quan trọng.",
+    "Không để cảm xúc chi phối vào và chốt lời non.",
+    "Luôn luôn tuân thủ đặt Stoploss hợp lý.",
+    "Khi lệnh đi ngược xu hướng cũng không đóng lệnh ngay và cũng không dời Stoploss ra xa.",
+    "Không cố gắng tìm cơ hội vào lệnh ngay sau khi chạm Stoploss.",
+    "Không kì vọng lệnh đó phải thắng và càng không sợ lệnh đó bị thua, tất cả cứ để cho hệ thống giao dịch đo lường, thời gian sẽ trả lời tất cả.",
+    "Cắt out ra ngoài 1 phần lợi nhuận nhỏ sau mỗi lệnh giao dịch thành công để tận hưởng cảm giác chiến thắng.",
+    "Ghi chép lại nhật kí giao dịch, đúc kết lại kinh nghiệm sau mỗi lệnh giao dịch để không mắc phải sai lầm cho những lần sau.",
+    "Nhanh chóng quên đi quá khứ giao dịch, chỉ giữ lại cho mình bài học, và setup một cuộc chơi mới.",
+    "Liên tục học tập, backtest, đúc kết kinh nghiệm, hoàn thiện bản thân và giữ sự kỉ luật ở mức cao nhất.",
   ];
   return (
     <Box sx={{ padding: 4 }}>
@@ -91,13 +71,13 @@ export default function AfterPlacingOrders() {
             <Card sx={{ maxHeight: "67.5vh", overflow: "auto" }}>
               <CardContent>
                 <List>
-                  {data.map((it, idx) => {
+                  {data.map((item, idx) => {
                     return (
                       <ListItem
                         key={idx}
                         sx={{ display: "flex", alignItems: "flex-start" }}
                       >
-                        <ItemLists item={it?.info} />
+                        <ItemLists item={item} />
                       </ListItem>
                     );
                   })}

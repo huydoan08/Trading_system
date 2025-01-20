@@ -4,13 +4,12 @@ import ItemLists from "../../components/ItemLists";
 
 // Các tiêu chí trước khi vào một lệnh giao dịch
 const criteria = [
-  "Có chiến lược giao dịch phù hợp tùy vào từng giai đoạn của thị trường.",
+  "Có chiến lược giao dịch phù hợp tùy thuộc vào từng giai đoạn của thị trường, và luôn chuẩn bị sẵn trước các kịch bản có thể xảy ra.",
   "Kiên nhẫn quan sát các dấu hiệu của thị trường trên đồ thị giá và RSI.",
-  "Chỉ vào lệnh khi đáp ứng được các tiêu chí của hệ thống giao dịch.",
-  "Chỉ giao dịch BTC và theo xu hướng chính vậy là đủ.",
-  "Mỗi một lệnh giao dịch sẽ có khối lượng cố định là 5,000$ và chia làm 3 lần mua theo tỉ lệ là 1000$ - 2000$ - 2000$.",
+  "Chỉ vào lệnh khi các tín hiệu đã đủ mạnh.",
+  "Chỉ giao dịch BTC thôi nếu muốn giữ được tiền.",
   "Không cố tình đi đoán đỉnh và đoán đáy.",
-  "Hiểu thật sâu cách mà cá mập thao túng thị trường thì sẽ dám vào lệnh bắt đỉnh, bắt đáy ở ở những vùng giá rất đẹp, và né được các cạm bẫy."
+  "Tính toán thật kĩ khoản cắt lỗ cho mỗi lệnh giao dịch."
 ];
 
 export default function BeforeEnterOrders() {
