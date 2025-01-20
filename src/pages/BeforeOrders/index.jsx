@@ -9,7 +9,8 @@ const criteria = [
   "Chỉ vào lệnh khi các tín hiệu đã đủ mạnh.",
   "Chỉ giao dịch BTC thôi nếu muốn giữ được tiền.",
   "Không cố tình đi đoán đỉnh và đoán đáy.",
-  "Tính toán thật kĩ khoản cắt lỗ cho mỗi lệnh giao dịch."
+  "Tính toán thật kĩ khoản cắt lỗ cho mỗi lệnh giao dịch.",
+  "Tuyệt đối không DCA làm cho khối lượng giao dịch lớn dần lên."
 ];
 
 export default function BeforeEnterOrders() {
