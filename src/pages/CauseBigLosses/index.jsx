@@ -11,7 +11,8 @@ const list = [
   "Cái ngu số 5: Giao dịch ở khung thời gian nhỏ dẫn đến bị quét Stoploss nhiều lần.",
   "Cái ngu số 6: Giao dịch loạn xạ, không có phương pháp rõ ràng.",
   "Cái ngu số 7: Giao dịch future coin lowcap.",
-  "Cái ngu số 8: Nghĩ là tại vùng đó là một vùng hỗ trợ cứng hoặc kháng cự cứng mà giá không thể phá qua."
+  "Cái ngu số 8: Nghĩ là tại vùng đó là một vùng hỗ trợ cứng hoặc kháng cự cứng mà giá không thể phá qua.",
+  "Cái ngu số 9: Vào lệnh theo cảm tính, và thoát lệnh cũng theo cảm tính. "
 ];
 
 // Cách khắc phục những sai lầm đó và tuân thủ quy tắc một cách tuyệt đối để có thể đi dài hạn với thị trường, có lợi nhuận một cách ổn định, bền vững.
