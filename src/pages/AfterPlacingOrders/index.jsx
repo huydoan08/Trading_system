@@ -66,7 +66,7 @@ export default function AfterPlacingOrders() {
     },
   ];
   const data = [
-    "Quản lý lệnh giao dịch theo cấu trúc sóng H4 dời SL về những vùng giá quan trọng.",
+    "Quản lý lệnh giao dịch theo cấu trúc sóng M30.",
     "Không để cảm xúc chi phối vào và chốt lời non.",
     "Luôn luôn tuân thủ đặt Stoploss hợp lý.",
     "Khi lệnh đi ngược xu hướng cũng không đóng lệnh ngay và cũng không dời Stoploss ra xa.",
