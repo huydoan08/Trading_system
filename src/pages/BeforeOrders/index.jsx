@@ -6,11 +6,10 @@ import ItemLists from "../../components/ItemLists";
 const criteria = [
   "Luôn có kịch bản cho giai đoạn sắp tới của thị trường.",
   "Kiên nhẫn quan sát các dấu hiệu của thị trường trên đồ thị giá và RSI.",
-  "Chỉ vào lệnh khi đáp ứng được các tiêu chí của hệ thống giao dịch.",
-  "Chỉ giao dịch BTC.",
   "Không cố tình đi đoán đỉnh và đoán đáy.",
-  "Hiểu thật sâu cách mà cá mập thao túng thị trường thì sẽ dám vào lệnh bắt đỉnh, bắt đáy ở ở những vùng giá rất đẹp, và né được các cạm bẫy.",
-  "Tính toán SL, TP, RR trước khi đưa ra quyết định vào lệnh giao dịch."
+  "Chỉ nên giao dịch BTC",
+  "Nên giao dịch ở khung thời gian H4 và vào khung M30 để quan sát và quản lý lệnh.",
+  "Tính toán trước SL, TP, RR cho mỗi lệnh trước khi vào lệnh."
 ];
 
 export default function BeforeEnterOrders() {
