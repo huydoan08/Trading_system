@@ -67,7 +67,7 @@ export default function AfterPlacingOrders() {
   ];
   const data = [
     {
-      info: "Quản lý lệnh giao dịch theo cấu trúc sóng H4 dời SL về những vùng giá quan trọng.",
+      info: "Quản lý lệnh giao dịch theo cấu trúc sóng M30 dời SL về những vùng giá quan trọng.",
     },
     {
       info: "Không để cảm xúc chi phối vào và chốt lời non."
