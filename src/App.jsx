@@ -4,6 +4,8 @@ import DashboardIcon from "@mui/icons-material/Dashboard";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import GroupsIcon from '@mui/icons-material/Groups';
 import LayersIcon from "@mui/icons-material/Layers";
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 import StarsIcon from '@mui/icons-material/Stars';
 
@@ -43,12 +45,12 @@ const NAVIGATION = [
   {
     segment: "long-entry-trades",
     title: "LONG ENGTRY",
-    icon: <LayersIcon />,
+    icon: <ArrowUpwardIcon />,
   },
   {
     segment: "shot-entry-trades",
     title: "SHORT ENGTRY",
-    icon: <LayersIcon />,
+    icon: <ArrowDownwardIcon />,
   },
   {
     segment: "order-management",
