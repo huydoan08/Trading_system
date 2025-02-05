@@ -26,6 +26,8 @@ import Phylosophy from "./pages/Phylosophy";
 import CauseBigLosses from "./pages/CauseBigLosses";
 import Blogs from "./pages/Blogs";
 import BeforeEnterOrders from "./pages/BeforeOrders";
+import LongEntry from "./pages/LongEntry";
+import ShortEntry from "./pages/ShotEntry";
 
 const NAVIGATION = [
   {
@@ -36,6 +38,16 @@ const NAVIGATION = [
   {
     segment: "criteria",
     title: "TIÊU CHÍ VÀO LỆNH",
+    icon: <LayersIcon />,
+  },
+  {
+    segment: "long-entry-trades",
+    title: "LONG ENGTRY",
+    icon: <LayersIcon />,
+  },
+  {
+    segment: "shot-entry-trades",
+    title: "SHORT ENGTRY",
     icon: <LayersIcon />,
   },
   {
@@ -120,6 +132,10 @@ function DemoPageContent({ pathname }) {
       return <BigLossTrades />;
     case "/important-trades":
       return <ImporttantNotes />;
+    case "/long-entry-trades":
+      return <LongEntry />;
+    case "/shot-entry-trades":
+      return <ShortEntry />;
     case "/criteria":
       return <BeforeEnterOrders />;
     case "/order-management":
