@@ -4,11 +4,12 @@ import ItemLists from "../../components/ItemLists";
 
 // Các tiêu chí trước khi vào một lệnh giao dịch
 const criteria = [
+  "Luôn có kịch bản cho giai đoạn sắp tới của thị trường.",
   "Kiên nhẫn quan sát các dấu hiệu của thị trường trên đồ thị giá và RSI.",
-  "Chỉ vào lệnh khi đã tìm ra được entry vào lệnh đẹp và xác định được stoploss cho entry đó.",
   "Không cố tình đi đoán đỉnh và đoán đáy.",
+  "Chỉ nên giao dịch BTC",
   "Nên giao dịch ở khung thời gian H4 và vào khung M30 để quan sát và quản lý lệnh.",
-  "Xác định trước TP lên tại vùng nào, và chờ đợi khi giá nên tại vùng đó mình sẽ tiếp tục quan sát và quản lý lệnh."
+  "Tính toán trước SL, TP, RR cho mỗi lệnh trước khi vào lệnh."
 ];
 
 export default function BeforeEnterOrders() {
