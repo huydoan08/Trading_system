@@ -30,11 +30,17 @@ import Blogs from "./pages/Blogs";
 import BeforeEnterOrders from "./pages/BeforeOrders";
 import LongEntry from "./pages/LongEntry";
 import ShortEntry from "./pages/ShotEntry";
+import Strategy from "./pages/Strategy";
 
 const NAVIGATION = [
   {
     segment: "trading-system",
     title: "HỆ THỐNG GIAO DỊCH",
+    icon: <DashboardIcon />,
+  },
+  {
+    segment: "strategy",
+    title: "CHIẾN LƯỢC GIAO DỊCH",
     icon: <DashboardIcon />,
   },
   {
@@ -128,6 +134,8 @@ function DemoPageContent({ pathname }) {
   switch (pathname) {
     case "/trading-system":
       return <TradingSystem />;
+    case "/strategy":
+      return <Strategy />;
     case "/history/big-win-trades":
       return <BigWinTrades />;
     case "/history/big-loss-trades":

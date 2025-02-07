@@ -5,6 +5,7 @@ import ItemLists from "../../components/ItemLists";
 const list = [
   "Nôn nóng muốn vào lệnh ngay khi mà dấu hiệu chưa rõ ràng, tỉ lệ RR không cao.",
   "Ngay sau khi bị quét SL thì tâm sân nổi lên và muốn vào lệnh mới ngay lập tức.",
+  "Sau khi chiến thắng thì chủ quan, tâm tham nổi lên và nhanh chóng muốn vào một lệnh tiếp theo",
   "Không xác định trước điểm TP hoặc có nhưng đặt TP quá xa không hợp lý, đó là tâm tham.",
   "Đóng lệnh trực tiếp bằng tay trong khi lệnh đó đang được chạy, nếu sợ quét SL thì mãi mãi sẽ là con rối trong thị trường này.",
   "Theo dõi thị trường quá nhiều, đó là việc làm vô thức nhưng vô tình sẽ làm hại mình.",

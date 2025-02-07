@@ -66,7 +66,7 @@ export default function AfterPlacingOrders() {
     },
   ];
   const data = [
-    "Quản lý lệnh giao dịch theo cấu trúc sóng M30, H4, Fibo 0.5 tuỳ thuộc vào giai đoạn của thị trường mà linh hoạt áp dụng.",
+    "Quản lý lệnh giao dịch theo cấu trúc sóng H4, Fibo 0.5 H4, M30 tuỳ thuộc vào giai đoạn của thị trường mà linh hoạt áp dụng.",
     "Không để cảm xúc chi phối vào và chốt lời non, chỉ đóng lệnh khi đã đạt đủ target đặt ra trước đó hoặc chạm SL.",
     "Khi lệnh đi ngược xu hướng cũng không đóng lệnh ngay và cũng không dời Stoploss ra xa.",
     "Không cố gắng tìm cơ hội vào lệnh ngay sau khi chạm Stoploss.",

@@ -19,9 +19,11 @@ const timeFrames = [
 ];
 
 const analysisLists = [
-  "Hỗ trợ hay kháng cự là một vùng cản nơi mà tâm lý đám đông đang đặt niềm tin ở đó => Tức là rất nhiều lệnh chờ đang được setup ở đó.",
-  "Tại vùng hỗ trợ kháng cự mà thấy có dấu hiệu phá qua, sau đó retest lại nhưng vẫn vượt ra khỏi vùng đó thì chứng tỏ đó không còn là một vùng cản nữa.",
-  "Thị trường hiện nay còn có cả margin future thế cho nên là nhóm MM sẽ vẽ ra các vùng kháng cự hỗ trợ CỨNG rồi sau đó dẫn dụ cho người chơi đặt Stoploss dưới vùng đó rất nhiều và nó quét qua."
+  "Hỗ trợ hay kháng cự là một vùng cản nơi mà tâm lý đám đông đang đặt niềm tin ở đó",
+  "Nếu một vùng hỗ trợ mà giá liên tục test đi test lại nhiều lần thì đó không còn là hỗ trợ cứng nữa",
+  "Nếu giá thủng qua 1 vùng hỗ trợ sau đó rút râu nến lên luôn và ko có phá qua được, thì khả năng cao là giá sẽ hồi lên và đợi test lại tiếp.",
+  "Nếu giá thủng qua 1 vùng hỗ trợ và không hề rút râu, sau đó test lại mà vẫn bị thủng thì hỗ trợ đó sẽ trở thành 1 vùng kháng cự mới",
+  "Thị trường hiện nay còn có cả margin future thế cho nên là nhóm MM sẽ vẽ ra các vùng kháng cự hỗ trợ CỨNG rồi sau đó dẫn dụ cho người chơi đặt Stoploss dưới vùng đó rất nhiều và nó quét qua.",
 ];
 
 const TechnicalAnalysis = () => {
