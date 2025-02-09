@@ -5,23 +5,32 @@ import ItemLists from "../../components/ItemLists";
 // Những lưu ý quan trọng
 export default function ImporttantNotes() {
   const data = [
-    "Chúng ta phải thừa nhận rằng thị trường này là một thị trường làm giá và chúng ta chỉ follow theo dựa vào những dấu hiệu.",
-    "Những dấu hiệu thì luôn luôn chỉ mang tính xác suất, không chắc chắn một điều gì cả, đó là sự vô thường của thị trường.",
-    "Việc quan trọng nhất là phải có kĩ năng xử lý (systems + trực giác) và phản ứng kịp thời tại những thời điểm quan trọng, chứ không phải chỉ tập trung vào việc đi dự đoán giá.",
-    "Khi mà người khác thua lỗ lớn, cháy tài khoản thì mình chỉ thiệt hại nhỏ thì đó là một thành công.",
-    "Phải đặt mục tiêu thận trọng nên hàng đầu, nếu không thôi chỉ 1 lần sai thì sẽ không có cơ hội để làm lại.",
-    "Khi mà đám đông bên ngoài bị thanh lý lệnh và cháy tài khoản, sợ hãi mất niềm tin thì đó là lúc cơ hội thực sự đến với bạn.",
-    "Khi mà đám đông đang rất lạc quan, rất chủ quan thì lúc đó mình nên biết sợ hãi mà rút lui.",
-    "Đứng ngoài chờ đợi khi cơ hội chưa thực sự rõ ràng cũng đã là thành công.",
-    "Hãy làm những thứ đơn giản trước và làm cho thật giỏi, tinh hoa của sự phức tạp chính là sự đơn giản.",
-    "Trong đầu tư phải có khả năng đưa ra quyết định độc lập, phải tin tưởng vào bản thân, và sẵn sàng chịu trách nhiệm với các quyết định của chính bản thân mình.",
-    "Trong giao dịch và đầu tư mà vẫn còn nhìn vào mấy cây nến tăng giảm, nhìn vào khung H1, nhìn vào số tiền trong tài khoản nhảy múa, nhìn vào những biến động ngắn hạn của thị trường và để cho cảm xúc chi phối vào thì cuộc đời sẽ còn mãi mãi khổ.",
-    "Nếu mà muốn thắng thì đừng sợ thua, muốn ăn sóng dài thì phải chấp nhận bỏ qua sóng ngắn, cái gì nó cũng có cái giá của nó.",
-    "Bản lĩnh thật sự của một trader thể hiện ở việc không để cho thị trường thao túng, chiến thắng được bản ngã của bản thân, tâm phải thật tĩnh lặng như mặt hồ, và có chiều sâu học tập.",
-    "Điều mà một trader thành công cần phải làm được đó là duy trì lợi nhuận ổn định trong một thời gian dài.",
-    "Nên tập trung kĩ năng vào đánh 1 chiều sóng tăng, chỉ short khi mà cơ hội thực sự rất rất ngon thì mới vào.",
-    "Stoploss của người ta là điểm vào lệnh của mình, thì đó là cái key quan trọng để rèn luyện sự kiên nhẫn.",
-    "Khi mà kiếm được tiền rồi thì phải khắc vào trong đầu của mình đó là phải giữ được tiền thật chắc đừng để tiền rơi."
+    "1. Chúng ta phải thừa nhận rằng thị trường này là một thị trường làm giá và chúng ta chỉ follow theo dựa vào những dấu hiệu.",
+    "2. Những dấu hiệu thì luôn luôn chỉ mang tính xác suất, không chắc chắn một điều gì cả, đó là sự vô thường của thị trường.",
+    "3. Việc quan trọng nhất là phải có kĩ năng xử lý (systems + trực giác) và phản ứng kịp thời tại những thời điểm quan trọng, chứ không phải chỉ tập trung vào việc đi dự đoán giá.",
+    "4. Phải đặt mục tiêu thận trọng nên hàng đầu, nếu không thôi chỉ 1 lần sai thì sẽ không có cơ hội để làm lại.",
+    "5. Khi mà đám đông bên ngoài bị thanh lý lệnh và cháy tài khoản, sợ hãi mất niềm tin thì đó là lúc cơ hội thực sự đến với bạn.",
+    "6. Khi mà đám đông đang rất lạc quan, rất chủ quan thì lúc đó mình nên biết sợ hãi mà rút lui.",
+    "7. Đứng ngoài chờ đợi khi cơ hội chưa thực sự rõ ràng cũng đã là thành công.",
+    "8. Hãy làm những thứ đơn giản trước và làm cho thật giỏi, tinh hoa của sự phức tạp chính là sự đơn giản.",
+    "9. Stoploss của người ta là điểm vào lệnh của mình, thì đó là cái key quan trọng để rèn luyện sự kiên nhẫn.",
+    "10. Lập kế hoạch giao dịch. Giao dịch theo kế hoạch.",
+    "11. Duy trì thói quen ghi ghép nhật kí giao dịch.",
+    "12. Stoploss là thứ bắt buộc phải có.",
+    "13. Không bao giờ huỷ stoploss sau khi đặt nó.",
+    "14. Tránh nhảy ra nhảy vào thị trường quá thường xuyên.",
+    "15. Hãy mong chờ và chấp nhận các thua lỗ một cách nhẹ nhàng. Vì sau lệnh thua lỗ này thì cơ hội thắng lớn đang đến rất gần.",
+    "16. Nếu thị trường không làm điều bạn nghĩ nó sẽ làm thì hãy thoát ra.",
+    "17. Đừng bao giờ đi đoán đỉnh, đoán đáy.",
+    "18. Không bao giờ tự nguyện đi khuyên ai khác và không bao giờ khoe khoang chiến thắng của mình.",
+    "19. Các sai lầm ngớ ngẩn nhất trong trading là đi đóng lệnh khi đang có lời, và gồng lệnh khi đang lỗ.",
+    "20. Đứng ngoài thị trường cũng là một vị thế.",
+    "21. Nếu bạn không biết mình là ai thì thị trường sẽ là nơi đắt giá để bạn tìm ra nó.",
+    "21. Nếu bạn không biết ai đang mất tiền cho thị trường thì hãy coi chừng chính bạn sẽ là người bị mất tiền.",
+    "22. Khi con tàu bắt đầu chìm, đừng cầu nguyện mà hãy nhảy ra!",
+    "23. Thà để mất mặt chứ đừng để mất tiền.",
+    "24. Luôn khắc ghi tận xương tuỷ một bộ nguyên tắc giao dịch mà đang hiệu quả với bạn.",
+    "25. Một người sẽ trở thành thứ mà anh ta nghĩ về nó suốt ngày."
   ];
   return (
     <Box
@@ -34,7 +43,7 @@ export default function ImporttantNotes() {
       textAlign="center"
       padding={8}
     >
-      <Header> LƯU Ý QUAN TRỌNG</Header>
+      <Header> LƯU Ý QUAN TRỌNG vs NGUYÊN TĂC GIAO DỊCH</Header>
       <List>
         {data.map((item, idx) => {
           return (
