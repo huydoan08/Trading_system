@@ -10,7 +10,7 @@ const list = [
   "Khi mà nhìn xunh quanh ai ai cũng kiếm được tiền thì coi chừng chính mình sẽ là người mất tiền đấy nhé."
 ];
 
-const CrowdPsychologyAnalysis = () => {
+const CrowdPsychology = () => {
   return (
     <Box
       padding={8}
@@ -36,4 +36,4 @@ const CrowdPsychologyAnalysis = () => {
   );
 };
 
-export default CrowdPsychologyAnalysis;
+export default CrowdPsychology;

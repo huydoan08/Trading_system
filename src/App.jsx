@@ -21,7 +21,7 @@ import BigLossTrades from "./pages/BigLossTrades";
 import ImporttantNotes from "./pages/ImportantNotes";
 import AfterPlacingOrders from "./pages/AfterPlacingOrders";
 import TechnicalAnalysis from "./pages/TechnicalAnalysis";
-import CrowdPsychologyAnalysis from "./pages/CrowdPsychologyAnalysis";
+import CrowdPsychology from "./pages/CrowdPsychology";
 import SharkManipulate from "./pages/SharkManipulate";
 import PassMistake from "./pages/PassMistake";
 import Phylosophy from "./pages/Phylosophy";
@@ -155,7 +155,7 @@ function DemoPageContent({ pathname }) {
     case "/technical-analysis":
       return <TechnicalAnalysis />;
     case "/crowd-psychology-analysis":
-      return <CrowdPsychologyAnalysis />;
+      return <CrowdPsychology />;
     case "/pricing-analysis":
       return <SharkManipulate />;
     case "/pass-mistake":
