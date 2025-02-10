@@ -11,6 +11,7 @@ const RSI = [
   "Nếu RSI chưa vượt ra khỏi vùng 80 và có dấu hiệu bó sát lại đường TBC thì coi chừng mà bỏ chạy.",
   "Nếu RSI vượt quá vùng 30 thì đợi cho RSI cắt lên đường TBC mới có thể vào lệnh được",
   "Nếu RSI vượt quá vùng 20 thì cần kiên nhẫn chờ đợi retest và tạo đáy RSI sau cao hơn đáy cũ.",
+  "Tuyệt đối không lạm dụng RSI để tất tay vì kịch bản của thị trường luôn luôn có thể thay đổi bất kì lúc nào."
 ];
 const timeFrames = [
   "Khung thời gian phản ánh nhóm người tham gia vào thị trường là những nhóm người nào.",
