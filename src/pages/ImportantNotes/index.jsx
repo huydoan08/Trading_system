@@ -43,7 +43,7 @@ export default function ImporttantNotes() {
       textAlign="center"
       padding={8}
     >
-      <Header> LƯU Ý QUAN TRỌNG vs NGUYÊN TĂC GIAO DỊCH</Header>
+      <Header> LƯU Ý QUAN TRỌNG vs NGUYÊN TẮC GIAO DỊCH</Header>
       <List>
         {data.map((item, idx) => {
           return (
