@@ -22,7 +22,7 @@ import ImporttantNotes from "./pages/ImportantNotes";
 import AfterPlacingOrders from "./pages/AfterPlacingOrders";
 import TechnicalAnalysis from "./pages/TechnicalAnalysis";
 import CrowdPsychologyAnalysis from "./pages/CrowdPsychologyAnalysis";
-import PricingAnalysis from "./pages/PricingAnalysis";
+import SharkManipulate from "./pages/SharkManipulate";
 import PassMistake from "./pages/PassMistake";
 import Phylosophy from "./pages/Phylosophy";
 import CauseBigLosses from "./pages/CauseBigLosses";
@@ -157,7 +157,7 @@ function DemoPageContent({ pathname }) {
     case "/crowd-psychology-analysis":
       return <CrowdPsychologyAnalysis />;
     case "/pricing-analysis":
-      return <PricingAnalysis />;
+      return <SharkManipulate />;
     case "/pass-mistake":
       return <PassMistake />;
     case "/phylosophy-of-life":
