@@ -23,7 +23,7 @@ import AfterPlacingOrders from "./pages/AfterPlacingOrders";
 import TechnicalAnalysis from "./pages/TechnicalAnalysis";
 import CrowdPsychologyAnalysis from "./pages/CrowdPsychologyAnalysis";
 import PricingAnalysis from "./pages/PricingAnalysis";
-import PersonalFeelingsAnalysis from "./pages/PersonalFeelingsAnalysis";
+import PassMistake from "./pages/PassMistake";
 import Phylosophy from "./pages/Phylosophy";
 import CauseBigLosses from "./pages/CauseBigLosses";
 import Blogs from "./pages/Blogs";
@@ -96,7 +96,7 @@ const NAVIGATION = [
     icon: <SailingIcon />,
   },
   {
-    segment: "personal-feelings-analysis",
+    segment: "pass-mistake",
     title: "SAI LẦM TRONG QUÁ KHỨ",
     icon: <SettingsAccessibilityIcon />,
   },
@@ -158,8 +158,8 @@ function DemoPageContent({ pathname }) {
       return <CrowdPsychologyAnalysis />;
     case "/pricing-analysis":
       return <PricingAnalysis />;
-    case "/personal-feelings-analysis":
-      return <PersonalFeelingsAnalysis />;
+    case "/pass-mistake":
+      return <PassMistake />;
     case "/phylosophy-of-life":
       return <Phylosophy />;
     case "/blogs":
