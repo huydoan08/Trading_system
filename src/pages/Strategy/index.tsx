@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import ImageGallery from "react-image-gallery";
 
-import Image01 from "/image/Strategy01.png";
+import Image01 from "/image/Plan01.png";
 import Header from "../../components/Header";
 import ItemLists from "../../components/ItemLists";
 

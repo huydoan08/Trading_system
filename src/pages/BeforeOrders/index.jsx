@@ -4,11 +4,13 @@ import ItemLists from "../../components/ItemLists";
 
 // Các tiêu chí trước khi vào một lệnh giao dịch
 const criteria = [
-  "Luôn có kịch bản cho giai đoạn sắp tới của thị trường.",
-  "Kiên nhẫn quan sát các dấu hiệu của thị trường trên đồ thị giá và RSI.",
+  "Luôn luôn có chiến lược ngắn hạn và dài hạn.",
+  "Kiên nhẫn chờ đợi thị trường làm việc, kỷ luật tuyệt đối trong tuân thủ chiến lược giao dịch.",
+  "Bình tĩnh và tập trung quan sát các dấu hiệu của thị trường trên đồ thị (hỗ trợ, kháng cự, price Action, mẫu hình đẹp) và công cụ chỉ báo RSI.",
   "Không cố tình đi đoán đỉnh và đoán đáy.",
-  "Chỉ nên giao dịch BTC",
-  "Nên giao dịch ở khung thời gian H4 và vào khung M30 để quan sát và quản lý lệnh.",
+  "Chỉ tập trung duy nhất vào chart của BTC.",
+  "Tuân thủ Stoploss tuyệt đối trong giao dịch ngắn hạn.",
+  "Quản lý vốn, khống chế volumn giao dịch ở mức an toàn",
   "Tính toán trước SL, TP, RR cho mỗi lệnh trước khi vào lệnh."
 ];
 
