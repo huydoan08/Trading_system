@@ -21,11 +21,11 @@ export default function Strategy() {
     },
   ];
   const data = [
-    "Khung W: Sideway, nhưng mà thiên về xu hướng giảm",
+    "Khung W: Sideway, nhưng mà thiên về xu hướng giảm.",
     "Khung D: Giảm, đã bắt đầu bó hẹp lại và đang sideway.",
     "Khung H4: Sideway",
     "Khung H1: Sideway",
-    "Chiến lược ngắn hạn H4: Chờ nhịp rơi xuống vùng hỗ trợ rồi xem phản ứng giá thế nào rồi sẽ ra tay hành động.",
+    "Chiến lược ngắn hạn H4: Chờ nhịp rơi xuống vùng hỗ trợ, rồi xem phản ứng giá để tìm kiếm điểm vào lệnh.",
     "Chiến lược dài hạn: Chưa có vùng tích lũy đẹp, nên ngồi ngoài học tập, rèn luyện sự kiên nhẫn, sự kỉ luật.",
   ];
   return (
