@@ -193,11 +193,13 @@ export default function DashboardLayoutBasic() {
     };
   }, [pathname]);
 
+
   return (
     <AppProvider
       navigation={NAVIGATION}
       router={router}
       theme={demoTheme}
+      branding={null}
     >
       <DashboardLayout>
         <DemoPageContent pathname={pathname} />
