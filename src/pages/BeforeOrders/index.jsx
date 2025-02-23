@@ -5,7 +5,7 @@ import ItemLists from "../../components/ItemLists";
 // Các tiêu chí trước khi vào một lệnh giao dịch
 const criteria = [
   "Luôn luôn có chiến lược ngắn hạn và dài hạn.",
-  "Kiên nhẫn chờ đợi thị trường xác nhận đảo chiều xu hướng rồi mới vào lệnh.",
+  "Kiên nhẫn chờ đợi thị trường xác nhận đảo chiều xu hướng, hoặc retest xong rồi khi ấy mới vào lệnh.",
   "Chỉ giao dịch theo xu hướng đã lên kế hoạch trước đó",
   "Không giao dịch Buy/Sell loạn xạ.",
   "Bình tĩnh và tập trung quan sát các dấu hiệu của thị trường trên đồ thị (hỗ trợ, kháng cự, price Action, mẫu hình đẹp) và công cụ chỉ báo RSI.",
@@ -13,7 +13,7 @@ const criteria = [
   "Chỉ tập trung duy nhất vào chart của BTC.",
   "Khống chế lệnh giao dịch với Volumn giao dịch không vượt quá 3000$.",
   "Tuân thủ Stoploss tuyệt đối trong giao dịch ngắn hạn.",
-  
+  "Bỏ ngay tư duy SL an toàn đi, không có điểm SL nào là an toàn cả."
 ];
 
 export default function BeforeEnterOrders() {

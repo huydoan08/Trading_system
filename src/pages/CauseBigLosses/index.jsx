@@ -23,7 +23,8 @@ const list2 = [
   "Giao dịch ở khung H4 trở lên.",
   "Khi đã vào lệnh xong thì hãy để cho thị trường làm việc.",
   "Không sợ việc bị chạm SL.",
-  "Cần chờ đợi điểm vào lệnh đẹp để hạn chế tối đa việc bị chạm SL."
+  "Cần chờ đợi điểm vào lệnh đẹp để hạn chế tối đa việc bị chạm SL.",
+  "Duy trì thói quen ghi chép nhật kí giao dịch để rèn luyện sự kỉ luật, cũng như review lại lệnh đó."
 ];
 
 const Section = ({ title, list }) => (
