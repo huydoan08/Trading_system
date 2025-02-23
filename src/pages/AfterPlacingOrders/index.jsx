@@ -66,16 +66,13 @@ export default function AfterPlacingOrders() {
     },
   ];
   const data = [
-    "Quản lý lệnh giao dịch theo cấu trúc sóng H4, Fibo 0.5 H4, M30 tuỳ thuộc vào giai đoạn của thị trường mà linh hoạt áp dụng.",
+    "Quản lý lệnh giao dịch theo cấu trúc sóng hoặc theo fibo, không đặt SL quá sát.",
     "Không để cảm xúc chi phối vào và chốt lời non, chỉ đóng lệnh khi đã đạt đủ target đặt ra trước đó hoặc chạm SL.",
-    "Khi lệnh đi ngược xu hướng cũng không đóng lệnh ngay và cũng không dời Stoploss ra xa.",
+    "Không vội vàng dời Stoploss ngay sau khi giá vừa mới chạy một xíu.",
     "Không cố gắng tìm cơ hội vào lệnh ngay sau khi chạm Stoploss.",
-    "Không kì vọng lệnh đó phải thắng và càng không sợ lệnh đó bị thua, tất cả cứ để cho hệ thống giao dịch đo lường, thời gian sẽ trả lời tất cả.",
-    "Cắt out ra ngoài 1 phần lợi nhuận nhỏ sau mỗi lệnh giao dịch thành công để tận hưởng cảm giác chiến thắng.",
-    "Ghi chép lại nhật kí giao dịch, đúc kết lại kinh nghiệm sau mỗi lệnh giao dịch để không mắc phải sai lầm cho những lần sau.",
-    "Nhanh chóng quên đi quá khứ giao dịch, chỉ giữ lại cho mình bài học, và setup một cuộc chơi mới.",
-    "Liên tục học tập, backtest, đúc kết kinh nghiệm, hoàn thiện bản thân và giữ sự kỉ luật ở mức cao nhất.",
-  ];
+    "Tuyệt đối không đóng lệnh bằng tay khi mà giá đang chạy.",
+    "Chỉ giao dịch 1 chiều thôi."
+  ];           
   return (
     <Box sx={{ padding: 4 }}>
       <Header></Header>

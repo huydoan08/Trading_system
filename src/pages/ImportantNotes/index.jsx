@@ -30,7 +30,7 @@ export default function ImporttantNotes() {
     "22. Khi con tàu bắt đầu chìm, đừng cầu nguyện mà hãy nhảy ra!",
     "23. Thà để mất mặt chứ đừng để mất tiền.",
     "24. Luôn khắc ghi tận xương tuỷ một bộ nguyên tắc giao dịch mà đang hiệu quả với bạn.",
-    "25. Một người sẽ trở thành thứ mà anh ta nghĩ về nó suốt ngày."
+    "25. Một người sẽ trở thành thứ mà anh ta nghĩ về nó suốt ngày.",
   ];
   return (
     <Box

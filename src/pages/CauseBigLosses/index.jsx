@@ -21,7 +21,9 @@ const list2 = [
   "Đặt Stoploss hợp lý và tính toán kĩ rủi ro trước khi vào lệnh.",
   "Không DCA trong giao dịch.",
   "Giao dịch ở khung H4 trở lên.",
-  "Khi đã vào lệnh xong thì hãy để cho thị trường làm việc, chỉ kiểm tra lệnh giao dịch sau ít nhất 4h kể từ thời điểm gần nhất.",
+  "Khi đã vào lệnh xong thì hãy để cho thị trường làm việc.",
+  "Không sợ việc bị chạm SL.",
+  "Cần chờ đợi điểm vào lệnh đẹp để hạn chế tối đa việc bị chạm SL."
 ];
 
 const Section = ({ title, list }) => (
