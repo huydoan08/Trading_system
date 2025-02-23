@@ -19,6 +19,7 @@ import Image07 from "/image/07.png";
 import Image08 from "/image/08.png";
 import Image09 from "/image/09.png";
 import Image10 from "/image/10.png";
+import ImageL1 from "/image/L1.png";
 import Header from "../../components/Header";
 import ItemLists from "../../components/ItemLists";
 
@@ -63,6 +64,10 @@ export default function AfterPlacingOrders() {
     {
       original: Image10,
       thumbnail: Image10,
+    },
+    {
+      original: ImageL1,
+      thumbnail: ImageL1,
     },
   ];
   const data = [
