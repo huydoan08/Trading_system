@@ -31,6 +31,7 @@ export default function ImporttantNotes() {
     "23. Thà để mất mặt chứ đừng để mất tiền.",
     "24. Luôn khắc ghi tận xương tuỷ một bộ nguyên tắc giao dịch mà đang hiệu quả với bạn.",
     "25. Một người sẽ trở thành thứ mà anh ta nghĩ về nó suốt ngày.",
+    "26. Trong thị trường cypto không có khái niệm đỉnh, đáy mà chỉ có khái niệm là thời điểm và vị thế."
   ];
   return (
     <Box

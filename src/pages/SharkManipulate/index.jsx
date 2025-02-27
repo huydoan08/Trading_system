@@ -10,6 +10,7 @@ const list = [
   "Cá mập cho người chơi giao dịch 2 chiều để họ bị loạn đao pháp dẫn tới bị tẩu hỏa nhập ma.",
   "Cá mập cho người chơi sử dụng đòn bẩy lớn để khi mà thị trường biến động mạnh thì số tiền rất khủng sẽ bị thanh lý.",
   "Cá mập họ có tham vọng lớn nên sẽ đẩy giá lên khá cao để kiếm lợi nhuận khủng, nhưng tuy nhiên trên hành trình đó thì cá cũng sẽ có những pha rũ hàng rất mạnh.",
+  "BTC sẽ được đẩy để thu hút dòng tiền ngoài thị trường đổ vào, và khi đẩy lên xong thì sẽ phải giữ giá một thời gian để bán và giữ niềm tin cho nhà đầu tư để còn bán ra Altcoin."
 ];
 
 const PricingAnalysis = () => {
